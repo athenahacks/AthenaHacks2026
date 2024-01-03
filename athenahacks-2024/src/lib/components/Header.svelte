@@ -1,0 +1,11 @@
+<h2><slot /></h2>
+
+<style lang="scss">
+    h2 {
+        font-family: 'Lilita One', sans-serif;
+        color: $text-pink;
+        font-size: 3.5rem;
+        font-weight: 400;
+        margin: 0.5em 0
+    }
+</style>

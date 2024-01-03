@@ -1,0 +1,64 @@
+<script lang="ts">
+	import Header from '../Header.svelte';
+</script>
+
+<section id="about">
+	<div class="image">
+		<img src="/images/about.png" />
+	</div>
+	<div class="content">
+		<Header>What is AthenaHacks?</Header>
+		<p>
+			Join us for a spectacular weekend dedicated to <b>closing the gender gap</b>, exploring new
+			technologies, and building the next big thing! Our mission is to support and nurture students
+			of marginalized gender identities in technology by hosting Southern California’s
+			<b> premier women-centric hackathon (trans and non-binary inclusive) </b>. Join us on campus
+			at the University of Southern California (USC) for over 24 hours full of free food, technical
+			workshops, mentorship, social activities, and more! No experience necessary – we only require
+			curiosity and creativity!<br /><br />Check us out in the press!
+		</p>
+
+		<div class="press-links">
+			<a
+				href="https://www.huffpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_b_58ebf5fae4b0145a227cb797"
+				target="_blank"><img src="/images/press/huffpost.svg" alt="Huffpost" /></a
+			>
+			<a
+				href="https://viterbischool.usc.edu/news/2019/04/a-hackathon-for-women-by-women/"
+				target="_blank"
+				><img src="/images/press/usc_viterbi.svg" alt="USC Viterbi School of Engineering" /></a
+			>
+			<a href="https://dailytrojan.com/2020/03/08/women-in-tech-rising-above/" target="_blank"
+				><img src="/images/press/daily_trojan.png" alt="Daily Trojan" /></a
+			>
+			<a href="https://medium.com/@athenahacks" target="_blank"
+				><img src="/images/press/medium.png" alt="Medium" /></a
+			>
+		</div>
+	</div>
+</section>
+
+<style lang="scss">
+	#about {
+		display: flex;
+        flex-wrap: wrap;
+		gap: 4em;
+
+        .content {
+            flex: 1;
+        }
+
+		.press-links {
+			margin: 2em 0;
+			display: flex;
+			gap: 2em;
+
+			img {
+                filter: brightness(0.15);
+                max-width: 150px;
+                height: 50px;
+                object-fit: contain;
+			}
+		}
+	}
+</style>
