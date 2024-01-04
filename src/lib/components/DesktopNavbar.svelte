@@ -107,6 +107,7 @@
 		}
 	}
 	nav {
+		z-index: 150;
 		position: fixed;
 		left: 0;
 		right: 0;
