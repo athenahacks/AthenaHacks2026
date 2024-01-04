@@ -23,6 +23,13 @@
 		}
 	}
 
+	summary:-webkit-details-marker {
+		display: none;
+	}
+	summary::marker {
+		content: '';
+		display: none;
+	}
 	details {
 		summary {
 			display: block;
@@ -35,14 +42,6 @@
 
 			&:hover {
 				cursor: pointer;
-			}
-
-			&:-webkit-details-marker {
-				display: none;
-			}
-			&::marker {
-				content: '';
-				display: none;
 			}
 
 			span {
