@@ -52,7 +52,7 @@
 							<div class="img-wrapper">
 								{#if data?.linkedin}
 									<span class="link-icon"><Fa icon={faLinkedin}></Fa></span>
-									<a href={data.linkedin}><img {src} alt={name} /></a>
+									<a href={data.linkedin} target="_blank"><img {src} alt={name} /></a>
 								{:else}
 									<img {src} alt={name} />
 								{/if}
