@@ -56,7 +56,7 @@
 			display: flex;
 			flex-direction: column;
 			column-gap: 1em;
-			align-items: center;
+			align-items: flex-end;
 			top: 58%;
 			right: 10em;
 			position: absolute;
@@ -94,6 +94,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				width: 80%;
+				align-items: center;
 			}
 		}
 	}
