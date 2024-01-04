@@ -31,6 +31,7 @@
 			background-color: $pink;
 			color: $brown;
 			transition: background-color 200ms ease-in;
+			list-style: none;
 
 			&:hover {
 				cursor: pointer;
@@ -39,7 +40,6 @@
 			&:-webkit-details-marker {
 				display: none;
 			}
-
 			&::marker {
 				display: none;
 			}

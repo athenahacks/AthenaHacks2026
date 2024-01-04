@@ -24,7 +24,7 @@
 			<a href="https://github.com/athenahacks/AthenaHacks2023" target="_blank">AthenaHacks 2023</a>
 			<a href="https://github.com/athenahacks/AthenaHacks2022" target="_blank">AthenaHacks 2022</a>
 			<a href="https://github.com/athenahacks/AthenaHacks2021" target="_blank">AthenaHacks 2021</a>
-			<a href="https://github.com/athenahacks/AthenaHacks2020" target="_blank">AthenaHacks 2020</a>
+			<a href="https://github.com/athenahacks/live-2020" target="_blank">AthenaHacks 2020</a>
 		</div>
 		<div class="applications">
 			<h3>Applications</h3>
