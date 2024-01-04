@@ -19,9 +19,11 @@
 		});
 
 		// Animate active indicator
-		const listElement = event.target.parentElement;
+		updateIndicator(event.target.parentElement);
+	}
+
+	function updateIndicator(listElement: any) {
 		navList.style.setProperty('--transformDistance', `calc(${listElement.offsetLeft}px - 1.5em)`);
-		console.log(listElement.offsetLeft);
 		navList.style.setProperty('--activeWidth', `${listElement.offsetWidth}px`);
 	}
 
@@ -32,12 +34,20 @@
 		});
 	}
 
+	let aboutListElement: HTMLElement;
+	function resetNavbar() {
+		activeSection = 'about';
+		updateIndicator(aboutListElement);
+	}
+
 	onMount(async () => {
 		const listElement: any = navList.firstChild;
 		navList.style.setProperty('--transformDistance', `calc(${listElement.offsetLeft}px - 1.5em)`);
 		navList.style.setProperty('--activeWidth', `${listElement.offsetWidth}px`);
 	});
 </script>
+
+<svelte:window on:resize={resetNavbar} />
 
 <!-- Container allows background gradient and blur -->
 <div class="nav-container">
@@ -51,7 +61,7 @@
 		<div class="navbar-wrapper">
 			<div class="navbar">
 				<ul bind:this={navList}>
-					<li class:active={activeSection == 'about'}>
+					<li class:active={activeSection == 'about'} bind:this={aboutListElement}>
 						<a href="#about" on:click={toggleActive}>About</a>
 					</li>
 					<li class:active={activeSection == 'faqs'}>

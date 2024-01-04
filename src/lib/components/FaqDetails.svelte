@@ -31,6 +31,7 @@
 			background-color: $pink;
 			color: $brown;
 			transition: background-color 200ms ease-in;
+
 			&:hover {
 				cursor: pointer;
 			}
@@ -46,6 +47,7 @@
 				align-items: center;
 				font-family: 'Lilita One', sans-serif;
 				padding: 0.75em 1em;
+				
 				&:before {
 					content: '>';
 					font-size: 1.1rem;
