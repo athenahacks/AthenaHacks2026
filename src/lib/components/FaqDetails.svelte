@@ -5,7 +5,7 @@
 
 <div class="faq-details">
 	<details>
-		<summary><span role="term">{question}</span></summary>
+		<summary role="term"><span>{question}</span></summary>
 	</details>
 	<div role="definition" class="content">
 		<p>{@html answer}</p>
@@ -23,22 +23,24 @@
 		}
 	}
 
-	summary:-webkit-details-marker {
-		content: '';
-	}
-	summary::marker {
-		content: '';
-	}
-
 	details {
+		summary:-webkit-details-marker {
+			content: '';
+			display: none;
+		}
+		summary::marker {
+			content: '';
+			display: none;
+		}
+
 		summary {
 			display: block;
+			list-style: none;
 			outline: 2px solid $brown;
 			border-radius: 0.75em 0.75em 0em 0.75em;
 			background-color: $pink;
 			color: $brown;
 			transition: background-color 200ms ease-in;
-			list-style: none;
 
 			&:hover {
 				cursor: pointer;
