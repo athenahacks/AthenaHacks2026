@@ -55,7 +55,7 @@
 		<div class="navbar">
 			<ul>
 				<li class:active={activeSection == 'home'}>
-					<a href="#home" on:click={scrollToTop}>Home</a>
+					<a href="#" on:click={scrollToTop}>Home</a>
 				</li>
 				<li class:active={activeSection == 'about'}>
 					<a href="#about" on:click={toggleActive}>About</a>
