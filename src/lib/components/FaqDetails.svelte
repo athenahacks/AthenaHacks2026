@@ -5,7 +5,7 @@
 
 <div class="faq-details">
 	<details>
-		<summary role="term" style="display: block;"><span>{question}</span></summary>
+		<summary><span role="term">{question}</span></summary>
 	</details>
 	<div role="definition" class="content">
 		<p>{@html answer}</p>

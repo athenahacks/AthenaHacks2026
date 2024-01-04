@@ -148,6 +148,7 @@
 			position: absolute;
 			margin-left: auto;
 			margin-right: auto;
+			overflow: visible;
 			left: 0;
 			right: 0;
 
