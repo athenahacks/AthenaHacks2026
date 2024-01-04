@@ -27,8 +27,8 @@
         color: $brown;
         font-size: 1.25rem;
         text-decoration: none;
-        transition: all 0.4s ease-out;
         font-weight: 400;
+        transition: all 0.4s ease-out;
 
         &:hover {
             transform: rotate(2deg);

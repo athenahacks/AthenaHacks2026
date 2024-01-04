@@ -4,7 +4,7 @@
 
 <section id="about">
 	<div class="image">
-		<img src="/images/about.png" />
+		<img src="/images/about.png" alt="Milkshake owl" />
 	</div>
 	<div class="content">
 		<Header>What is AthenaHacks?</Header>
@@ -12,10 +12,10 @@
 			Join us for a spectacular weekend dedicated to <b>closing the gender gap</b>, exploring new
 			technologies, and building the next big thing! Our mission is to support and nurture students
 			of marginalized gender identities in technology by hosting Southern California’s
-			<b> premier women-centric hackathon (trans and non-binary inclusive) </b>. Join us on campus
-			at the University of Southern California (USC) for over 24 hours full of free food, technical
-			workshops, mentorship, social activities, and more! No experience necessary – we only require
-			curiosity and creativity!<br /><br />Check us out in the press!
+			<b> premier women-centric hackathon (trans and non-binary inclusive)</b>. <br /><br />Join us
+			on campus at the University of Southern California (USC) for over 24 hours full of free food,
+			technical workshops, mentorship, social activities, and more! No experience necessary – we
+			only require curiosity and creativity!<br /><br />Check us out in the press!
 		</p>
 
 		<div class="press-links">
@@ -41,23 +41,42 @@
 <style lang="scss">
 	#about {
 		display: flex;
-        flex-wrap: wrap;
+		flex-wrap: wrap;
 		gap: 4em;
 
-        .content {
-            flex: 1;
-        }
+		.content {
+			flex: 1;
+		}
 
 		.press-links {
 			margin: 2em 0;
 			display: flex;
 			gap: 2em;
+			flex-wrap: wrap;
 
 			img {
-                filter: brightness(0.15);
-                max-width: 150px;
-                height: 50px;
-                object-fit: contain;
+				filter: brightness(0.15);
+				max-width: 150px;
+				height: 50px;
+				object-fit: contain;
+				transition: all 0.4s ease-out;
+
+				&:hover {
+					transform: rotate(2deg);
+				}
+			}
+		}
+
+		@include respond-to('medium') {
+			margin-top: -3em;
+			flex-flow: column;
+
+			.image {
+				margin: auto;
+				width: 80%;
+				img {
+					width: 100%;
+				}
 			}
 		}
 	}

@@ -5,7 +5,7 @@
 
 <section>
 	<div class="background"></div>
-	<div class="chocobar">
+	<div class="chocolate">
 		<img src="/images/hero-section-chocobar.png" alt="AthenaHacks chocolate keyboard. March 2-3" />
 	</div>
 	<div class="content">
@@ -28,10 +28,8 @@
 <style lang="scss">
 	section {
 		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
 		position: relative;
-    margin-bottom: 0;
 
 		.background {
 			background-image: url('/images/hero-section-cover.png');
@@ -42,7 +40,7 @@
 			padding-top: 66.64%;
 		}
 
-		.chocobar {
+		.chocolate {
 			position: absolute;
 			top: 15%;
 			text-align: center;
@@ -62,6 +60,39 @@
 			top: 58%;
 			right: 10em;
 			position: absolute;
+		}
+
+		@include respond-to('medium') {
+			.background {
+				padding-top: 130%;
+			}
+
+			.chocolate {
+				top: 20%;
+				img {
+					width: 80%;
+				}
+			}
+		}
+
+		@include respond-to('small') {
+			.background {
+				padding-top: 200%;
+			}
+
+			.chocolate {
+				img {
+					width: 90%;
+				}
+			}
+
+			.content {
+				top: 50%;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 

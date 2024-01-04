@@ -10,18 +10,20 @@
 </script>
 
 <div class="socials">
-	<a target="_blank"><Fa icon={faFacebookSquare} /></a>
-	<a target="_blank"><Fa icon={faEnvelopeSquare} /></a>
-	<a target="_blank"><Fa icon={faInstagramSquare} /></a>
-	<a target="_blank"><Fa icon={faSquareXTwitter} /></a>
-	<a target="_blank"><Fa icon={faLinkedinIn} /></a>
+	<a href="https://www.facebook.com/athenaHacks" target="_blank"><Fa icon={faFacebookSquare} /></a>
+	<a href="mailto:athenahacks@gmail.com" target="_blank"><Fa icon={faEnvelopeSquare} /></a>
+	<a href="https://www.facebook.com/athenaHacks" target="_blank"><Fa icon={faInstagramSquare} /></a>
+	<a href="https://twitter.com/athena_hacks" target="_blank"><Fa icon={faSquareXTwitter} /></a>
+	<a href="https://www.linkedin.com/company/athenahacks/" target="_blank"
+		><Fa icon={faLinkedinIn} /></a
+	>
 </div>
 
 <style lang="scss">
 	.socials {
 		display: flex;
 		align-items: center;
-		column-gap: 0.5em;
+		column-gap: 0.75em;
 		a {
 			color: $brown;
 			font-size: 2.5rem;

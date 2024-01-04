@@ -105,10 +105,15 @@
 		pointer-events: all;
 
 		.home-square {
+			z-index: 200;
 			padding: 1em;
 			transform: rotate(1deg);
 			position: relative;
 			transition: all 0.4s ease-out;
+
+			@include respond-to('medium') {
+				width: 100px;
+			}
 
 			&:hover {
 				cursor: pointer;
@@ -129,6 +134,11 @@
 			height: fit-content;
 			justify-content: center;
 			margin-top: 1em;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
 
 			.navbar {
 				background-color: $blue;
@@ -162,7 +172,7 @@
 
 					li {
 						font-family: 'Lilita One', sans-serif;
-						font-size: x-large;
+						font-size: 1.2rem;
 						padding: 1em 1em;
 
 						a {
@@ -175,6 +185,27 @@
 							&:hover {
 								transform: rotate(-2deg);
 							}
+						}
+					}
+
+					@include respond-to('medium') {
+						padding: 0 1em;
+						li {
+							font-size: 1rem;
+							padding: 1em 0.6em;
+						}
+
+						&::before {
+							z-index: -1;
+							content: '';
+							position: absolute;
+							height: 100%;
+							background-color: $dark-blue;
+							outline: 3px solid $brown;
+							border-radius: 1em;
+							width: var(--activeWidth);
+							transform: translateX(calc(var(--transformDistance) + 0.5em));
+							transition: all 0.4s cubic-bezier(0.91, 0, 0.75, 0.77);
 						}
 					}
 				}

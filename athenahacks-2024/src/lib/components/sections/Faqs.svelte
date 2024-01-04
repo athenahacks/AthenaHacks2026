@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '../Header.svelte';
-	import * as faqsJson from '$lib/data/faqs.json';
+	import faqsJson from '$lib/data/faqs.json';
 	import FaqDetails from '../FaqDetails.svelte';
 </script>
 
@@ -46,6 +46,29 @@
 				figcaption {
 					margin-top: 2em;
 				}
+			}
+		}
+
+		@include respond-to('medium') {
+			flex-direction: column;
+			.image {
+				width: 60%;
+				margin: auto;
+
+				figure {
+					text-align: center;
+					margin-top: 0;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		@include respond-to('small') {
+			.image {
+				width: 80%;
 			}
 		}
 	}

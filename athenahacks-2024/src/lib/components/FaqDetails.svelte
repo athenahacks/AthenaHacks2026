@@ -16,6 +16,11 @@
 	.faq-details {
 		margin-bottom: 1.5em;
 		filter: drop-shadow(0.3em 0.3em 0 $brown);
+		transition: all 0.4s ease-out;
+
+		&:hover {
+			transform: rotate(-0.5deg);
+		}
 	}
 
 	details {
@@ -24,7 +29,8 @@
 			outline: 2px solid $brown;
 			border-radius: 0.75em 0.75em 0em 0.75em;
 			background-color: $pink;
-
+			color: $brown;
+			transition: background-color 200ms ease-in;
 			&:hover {
 				cursor: pointer;
 			}
@@ -34,21 +40,19 @@
 			}
 
 			span {
-				color: $brown;
 				font-size: 1.1rem;
 				position: relative;
 				display: flex;
 				align-items: center;
 				font-family: 'Lilita One', sans-serif;
 				padding: 0.75em 1em;
-
 				&:before {
 					content: '>';
 					font-size: 1.1rem;
 					display: flex;
 					align-items: center;
 					margin-right: 0.75rem;
-					transition: rotate 300ms ease-out;
+					transition: rotate 200ms ease-out;
 				}
 			}
 		}
@@ -58,7 +62,7 @@
 				max-height: 800px; /* Set a max-height value enough to show all the content */
 				outline: 2px solid $brown;
 				transition:
-					max-height 500ms cubic-bezier(.88,.01,.74,.85),
+					max-height 300ms cubic-bezier(0.88, 0.01, 0.74, 0.85),
 					outline 0ms linear;
 			}
 			span::before {
@@ -71,14 +75,14 @@
 		margin-top: 2px;
 		background-color: $blue;
 		border-radius: 0.75em 0em 0.75em 0.75em;
-        outline: 2px solid transparent;
+		outline: 2px solid transparent;
 
 		max-height: 0;
 		box-sizing: border-box;
 		overflow: hidden;
 		transition:
-			max-height 500ms ease-in-out,
-			outline 0ms 500ms linear;
+			max-height 300ms ease-in-out,
+			outline 0ms 300ms linear;
 
 		p {
 			padding: 1em 2em 1.5em;

@@ -6,6 +6,10 @@
         color: $text-pink;
         font-size: 3.5rem;
         font-weight: 400;
-        margin: 0.5em 0
+        margin: 0.5em 0;
+
+        @include respond-to('small') {
+            font-size: 2.5rem;
+        }
     }
 </style>

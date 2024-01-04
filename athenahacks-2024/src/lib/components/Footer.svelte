@@ -1,27 +1,37 @@
 <script lang="ts">
 	import Socials from '$lib/components/Socials.svelte';
 
-    const athenaLogo: string = "images/ah-logo.png";
-    const viterbiLogo: string = "images/viterbi-logo.png";
+	const athenaLogo: string = 'images/ah-logo.png';
+	const viterbiLogo: string = 'images/viterbi-logo.png';
 </script>
 
 <footer>
 	<div class="footer">
 		<div class="logos">
 			<a target="_blank"><img src={athenaLogo} alt="AthenaHacks logo" /></a>
-			<a target="_blank"><img src={viterbiLogo} class="viterbi-logo" alt="USC Viterbi School of Engineering logo" /></a>
+			<a target="_blank"
+				><img
+					src={viterbiLogo}
+					class="viterbi-logo"
+					alt="USC Viterbi School of Engineering logo"
+				/></a
+			>
 		</div>
 		<div class="previous-sites">
 			<h3>Previous Sites</h3>
-			<a target="_blank">AthenaHacks 2023</a>
-			<a target="_blank">AthenaHacks 2022</a>
-			<a target="_blank">AthenaHacks 2021</a>
-			<a target="_blank">AthenaHacks 2020</a>
+			<a href="#" target="_blank">AthenaHacks 2023</a>
+			<a href="#" target="_blank">AthenaHacks 2022</a>
+			<a href="#" target="_blank">AthenaHacks 2021</a>
+			<a href="#" target="_blank">AthenaHacks 2020</a>
 		</div>
 		<div class="applications">
 			<h3>Applications</h3>
-			<a target="_blank">Hacker Applications</a>
-			<a target="_blank">Mentor Applications</a>
+			<a href="https://airtable.com/appC2yvmYQ33jcGYT/shrNWwl77LcMu7f1G" target="_blank"
+				>Hacker Applications</a
+			>
+			<a href="https://airtable.com/app1QQxZoUxfmKxLJ/shrWioweTVsOzvrhj" target="_blank"
+				>Mentor Applications</a
+			>
 		</div>
 		<div class="socials-wrapper">
 			<Socials />
@@ -40,8 +50,12 @@
 
 		display: flex;
 		justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 2em;
+		flex-wrap: wrap;
+		gap: 2em;
+
+		@include respond-to('small') {
+			padding-top: 8em;
+		}
 
 		// Blue background
 		&::before {
@@ -53,9 +67,9 @@
 			clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 		}
 
-        h3 {
-            margin-bottom: 0.5em;
-        }
+		h3 {
+			margin-bottom: 0.5em;
+		}
 
 		a {
 			font-weight: 400;

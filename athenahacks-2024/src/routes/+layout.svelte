@@ -13,9 +13,8 @@
 	{#if preloadVisible}
 		<div id="preloader" transition:fade={{ duration: 300 }}>
 			<div class="gif">
-                <img src="/images/preloader.gif" alt="Animation of bird typing">
-                <p>Loading...</p>
-            </div>
+				<img src="/images/preloader.gif" alt="Animation of bird typing" />
+			</div>
 		</div>
 	{/if}
 
@@ -39,22 +38,22 @@
 			background-color: $blue;
 			z-index: 200;
 
-            .gif {
-                width: 20%;
-                position: absolute;
-                top: 25%;
-                left: 0;
-                right: 0;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
+			.gif {
+				margin: auto;
+				margin-top: 20vh;
+				text-align: center;
 
-                p {
-                    font-family: 'Lilita One', sans-serif;
-                    color: $brown;
-                    font-size: 2rem;
-                }
-            }
+				img {
+					width: 30%;
+					height: auto;
+				}
+
+				p {
+					font-family: 'Lilita One', sans-serif;
+					color: $brown;
+					font-size: 2rem;
+				}
+			}
 		}
 	}
 </style>
