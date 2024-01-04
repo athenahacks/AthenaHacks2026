@@ -40,6 +40,10 @@
 				display: none;
 			}
 
+			&::marker {
+				display: none;
+			}
+
 			span {
 				font-size: 1.1rem;
 				position: relative;
@@ -47,7 +51,7 @@
 				align-items: center;
 				font-family: 'Lilita One', sans-serif;
 				padding: 0.75em 1em;
-				
+
 				&:before {
 					content: '>';
 					font-size: 1.1rem;
