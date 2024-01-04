@@ -41,6 +41,7 @@
 				display: none;
 			}
 			&::marker {
+				content: '';
 				display: none;
 			}
 
