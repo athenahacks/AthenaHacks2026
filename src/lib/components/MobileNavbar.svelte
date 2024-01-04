@@ -142,8 +142,15 @@
 			outline: $brown solid 2px;
 			width: 0;
 			min-width: fit-content;
-			transition: all 0ms 300ms ease;
+			transition:
+				width 0ms 300ms ease,
+				rotation 300ms ease;
 			color: $brown;
+
+			&:hover {
+				cursor: pointer;
+				transform: rotate(-1deg);
+			}
 
 			&:active,
 			&:focus {
@@ -171,12 +178,12 @@
 				flex-flow: column;
 				list-style-type: none;
 				margin: 0 auto;
-				padding: 0;
+				padding: 0.5em 0;
 				text-align: center;
 				width: 80%;
 
 				li {
-					padding: 0.15em 0;
+					padding: 0.25em;
 
 					&.active {
 						background-color: $dark-blue;
@@ -185,10 +192,15 @@
 					}
 
 					a {
+						display: block;
 						color: $brown;
 						text-decoration: none;
 						font-family: 'Lilita One', sans-serif;
 						font-weight: 400;
+
+						&:hover {
+							transform: rotate(1deg);
+						}
 					}
 				}
 			}
