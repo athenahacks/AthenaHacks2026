@@ -24,23 +24,19 @@
 	}
 
 	details {
-		summary:-webkit-details-marker {
-			content: '';
-			display: none;
-		}
-		summary::marker {
-			content: '';
-			display: none;
-		}
+		outline: 2px solid $brown;
+		border-radius: 0.75em 0.75em 0em 0.75em;
+		background-color: $pink;
+		overflow: hidden;
+		color: $brown;
 
 		summary {
 			display: block;
-			list-style: none;
-			outline: 2px solid $brown;
-			border-radius: 0.75em 0.75em 0em 0.75em;
-			background-color: $pink;
-			color: $brown;
 			transition: background-color 200ms ease-in;
+
+			&::-webkit-details-marker {
+				display: none;
+			}
 
 			&:hover {
 				cursor: pointer;
