@@ -24,12 +24,12 @@
 	}
 
 	summary:-webkit-details-marker {
-		display: none;
+		content: '';
 	}
 	summary::marker {
 		content: '';
-		display: none;
 	}
+
 	details {
 		summary {
 			display: block;
