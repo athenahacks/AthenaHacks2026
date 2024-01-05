@@ -98,6 +98,7 @@
 			bottom: 0;
 			backdrop-filter: blur(5px);
 			mask: linear-gradient(180deg, black 0%, transparent 12%);
+			-webkit-mask: linear-gradient(180deg, black 0%, transparent 12%);
 			pointer-events: none;
 		}
 	}
