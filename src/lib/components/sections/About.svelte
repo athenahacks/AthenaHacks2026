@@ -68,16 +68,25 @@
 		}
 
 		@include respond-to('medium') {
-			margin-top: -3em;
+			margin-top: -4em;
 			flex-flow: column;
 
 			.image {
 				z-index: 10;
 				margin: auto;
-				width: 80%;
+				width: 65%;
 				img {
 					width: 100%;
 				}
+			}
+		}
+
+		@include respond-to('small') {
+			margin-top: 0;
+			gap: 1em;
+
+			.image {
+				width: 80%;
 			}
 		}
 	}

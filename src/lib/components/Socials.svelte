@@ -12,7 +12,7 @@
 <div class="socials">
 	<a href="https://www.facebook.com/athenaHacks" target="_blank"><Fa icon={faFacebookSquare} /></a>
 	<a href="mailto:athenahacks@gmail.com" target="_blank"><Fa icon={faEnvelopeSquare} /></a>
-	<a href="https://www.facebook.com/athenaHacks" target="_blank"><Fa icon={faInstagramSquare} /></a>
+	<a href="https://www.instagram.com/athena_hacks" target="_blank"><Fa icon={faInstagramSquare} /></a>
 	<a href="https://twitter.com/athena_hacks" target="_blank"><Fa icon={faSquareXTwitter} /></a>
 	<a href="https://www.linkedin.com/company/athenahacks/" target="_blank"
 		><Fa icon={faLinkedinIn} /></a

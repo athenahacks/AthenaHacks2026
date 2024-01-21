@@ -38,7 +38,7 @@
         },
         {
             "question": "Can I mentor?",
-            "answer": "Yes! Applications for mentors will open soon."
+            "answer": "If you have technical experience with programming or software development, please apply to be a mentor today!"
         },
         {
             "question": "I want to join the organizing team. Where can I apply?",
@@ -47,6 +47,10 @@
         {
             "question": "Where can I find more info about opportunities and events?",
             "answer": "If you'd like to stay updated on all things AthenaHacks, subscribe to our newsletter <a href='http://eepurl.com/hbL3z1' target='_blank'>here</a>. We send out links to opportunities, interesting reads, and our favorite songs in every issue!"
+        },
+        {
+            "question": "Will AthenaHacks reimburse my transportation costs?",
+            "answer": "Unfortunately, we are unable to cover the costs of hackathon travel this year."
         }
     ]
 }

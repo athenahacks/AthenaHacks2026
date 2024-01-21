@@ -13,15 +13,25 @@
 			tilt="left"
 			backgroundColor="blue"
 			href="https://airtable.com/appC2yvmYQ33jcGYT/shrNWwl77LcMu7f1G"
-			target="_blank">AthenaHacks 2024 Hacker Applications</Button
+			target="_blank">AthenaHacks 2024 Hacker Application</Button
 		>
 		<Button
 			tilt="right"
 			backgroundColor="pink"
-			href="https://airtable.com/app1QQxZoUxfmKxLJ/shrWioweTVsOzvrhj"
-			target="_blank">AthenaHacks Interest Form</Button
+			href="https://airtable.com/appC2yvmYQ33jcGYT/shrCzdzj5vyRfqXfl"
+			target="_blank">AthenaHacks 2024 Mentor Application</Button
+		>
+		<Button
+			tilt="left"
+			backgroundColor="gold"
+			href="https://airtable.com/appC2yvmYQ33jcGYT/shrhXDTWiI3Th8VT0"
+			target="_blank">AthenaHacks 2024 Volunteer Application</Button
 		>
 		<Socials />
+		<div class="tech-together">
+			<p><small><i>AthenaHacks Powered by </i></small></p>
+			<img src="/images/sponsors/tech-together.png" alt="TechTogether logo">
+		</div>
 	</div>
 </section>
 
@@ -30,6 +40,7 @@
 		width: 100%;
 		margin: 0;
 		position: relative;
+		min-height: 100vh;
 
 		.background {
 			background-image: url('/images/hero-section-cover.png');
@@ -37,7 +48,7 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 0;
-			padding-top: 66.64%;
+			padding-top: 80%;
 		}
 
 		.chocolate {
@@ -57,9 +68,19 @@
 			flex-direction: column;
 			column-gap: 1em;
 			align-items: flex-end;
-			top: 58%;
+			top: 56%;
 			right: 10em;
 			position: absolute;
+
+			.tech-together {
+				display: flex;
+				align-items: center;
+
+				img {
+					height: 40px;
+					padding-left: 0.5em;
+				}
+			}
 		}
 
 		@include respond-to('medium') {
@@ -77,7 +98,7 @@
 
 		@include respond-to('small') {
 			.background {
-				padding-top: 200%;
+				padding-top: 220%;
 			}
 
 			.chocolate {
