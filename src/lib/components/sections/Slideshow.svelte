@@ -116,7 +116,7 @@
 
 					img {
 						height: 300px;
-						background-color: $text-gray;
+						width: 300px;
 						border-radius: 1.5em;
 					}
 				}

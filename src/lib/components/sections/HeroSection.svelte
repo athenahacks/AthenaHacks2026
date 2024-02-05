@@ -29,7 +29,7 @@
 		>
 		<Socials />
 		<div class="tech-together">
-			<p><small><i>AthenaHacks Powered by </i></small></p>
+			<p><small><i>AthenaHacks powered by </i></small></p>
 			<img src="/images/sponsors/tech-together.png" alt="TechTogether logo">
 		</div>
 	</div>
