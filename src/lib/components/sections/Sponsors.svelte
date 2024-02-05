@@ -43,6 +43,7 @@
 
 		.sponsor {
 			max-height: 90px;
+			max-width: 100%;
 
 			img {
 				object-fit: contain;
@@ -52,7 +53,8 @@
 		.section {
 			width: 50%;
 			display: flex;
-			gap: 1em;
+			flex-wrap: wrap;
+			gap: 3em;
 			justify-content: space-around;
 			padding: 3em;
 			border-radius: 1.25em 1.25em 0 1.25em;
@@ -64,8 +66,8 @@
 				width: 100px;
 				height: 100px;
 				position: absolute;
-				top: -30px;
-				right: -30px;
+				top: -40px;
+				right: -40px;
 				filter: drop-shadow(-0.05em 0.15em 0 $brown);
 			}
 		}
