@@ -37,7 +37,8 @@
 
 <style lang="scss">
 	.sponsor-list {
-		margin-bottom: 8em;
+		margin-top: 4em;
+		margin-bottom: 6em;
 		display: flex;
 		justify-content: center;
 
