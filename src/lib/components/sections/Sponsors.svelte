@@ -5,23 +5,18 @@
 <section id="sponsors">
 	<Header>Sponsors</Header>
 	<div class="sponsor-list">
-		<!-- <p><i>Coming soon...</i></p> -->
 		<div class="section tier-1">
-			<img
-				class="macaron"
-				src="/images/macaron-gold.png"
-				alt="macaron decoration"
-			/>
+			<img class="macaron" src="/images/macaron-gold.png" alt="macaron decoration" />
 			<img
 				class="sponsor"
 				src="/images/sponsors/bloomberg-engineering.png"
 				alt="Bloomberg Engineering"
 			/>
-			<img
-				class="sponsor"
-				src="/images/sponsors/chevron.png"
-				alt="Chevron"
-			/>
+			<img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" />
+		</div>
+		<div class="section tier-3">
+			<img class="macaron" src="/images/macaron-pink.png" alt="macaron decoration" />
+			<img class="sponsor stroke" src="/images/sponsors/google-cloud-text.png" alt="Google Cloud" />
 		</div>
 	</div>
 	<div class="thank-you-message">
@@ -40,7 +35,9 @@
 		margin-top: 4em;
 		margin-bottom: 6em;
 		display: flex;
-		justify-content: center;
+		flex-flow: column;
+		gap: 6em;
+		align-items: center;
 
 		.sponsor {
 			max-height: 90px;
@@ -52,7 +49,6 @@
 		}
 
 		.section {
-			width: 50%;
 			display: flex;
 			flex-wrap: wrap;
 			gap: 3em;
@@ -74,7 +70,12 @@
 		}
 
 		.tier-1 {
+			width: 50%;
 			background-color: $gold;
+		}
+
+		.tier-3 {
+			background-color: $pink;
 		}
 	}
 	.thank-you-message {
