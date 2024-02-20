@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '../Header.svelte';
-	import teamDataJson from '$lib/data/team.json';
+	import data from '$lib/data/team.yml';
 	import Fa from 'svelte-fa';
 	import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -12,7 +12,7 @@
 		['Programs', import.meta.glob('$lib/images/people/programs/*.jpg')]
 	]);
 
-	const teamData: { [key: string]: any } = teamDataJson;
+	const teamData: { [key: string]: any } = data;
 
 	async function loadProfilePhotosFromModule(module: any) {
 		const iterableModule = Object.entries(module);

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Header from '../Header.svelte';
-	import faqsJson from '$lib/data/faqs.json';
+	import data from '$lib/data/faqs.yml';
 	import FaqDetails from '../FaqDetails.svelte';
 </script>
 
@@ -8,7 +8,7 @@
 	<div class="content">
 		<div class="questions">
 			<Header>FAQs</Header>
-			{#each faqsJson.data as qa}
+			{#each data.faq as qa}
 				<FaqDetails question={qa.question} answer={qa.answer} />
 			{/each}
 		</div>
