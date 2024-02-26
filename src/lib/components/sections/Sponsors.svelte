@@ -21,7 +21,7 @@
 			<img class="macaron" src="/images/macaron-pink.png" alt="macaron decoration" />
 			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
 			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" />
-			<img class="sponsor" src="/images/sponsors/figma.png" alt="Figma" />
+			<!-- <img class="sponsor" src="/images/sponsors/figma.png" alt="Figma" /> -->
 		</div>
 	</div>
 	<div class="thank-you-message">
