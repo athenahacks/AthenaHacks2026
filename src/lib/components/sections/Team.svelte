@@ -36,7 +36,7 @@
 				return imageData;
 			})
 		);
-		console.log(images);
+		// console.log(images);
 		return images;
 	}
 </script>

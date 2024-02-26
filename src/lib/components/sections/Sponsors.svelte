@@ -16,7 +16,8 @@
 		</div>
 		<div class="section tier-3">
 			<img class="macaron" src="/images/macaron-pink.png" alt="macaron decoration" />
-			<img class="sponsor stroke" src="/images/sponsors/google-cloud-text.png" alt="Google Cloud" />
+			<img class="sponsor" src="/images/sponsors/google-cloud-text.png" alt="Google Cloud" />
+			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" />
 		</div>
 	</div>
 	<div class="thank-you-message">
