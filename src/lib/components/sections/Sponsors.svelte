@@ -3,7 +3,10 @@
 </script>
 
 <section id="sponsors">
-	<Header>Sponsors</Header>
+	<Header
+		>Sponsors
+		<img class="macaron-stack" src="/images/macaron-stack.png" alt="macaron stack" />
+	</Header>
 	<div class="sponsor-list">
 		<div class="section tier-1">
 			<img class="macaron" src="/images/macaron-gold.png" alt="macaron decoration" />
@@ -16,8 +19,9 @@
 		</div>
 		<div class="section tier-3">
 			<img class="macaron" src="/images/macaron-pink.png" alt="macaron decoration" />
-			<img class="sponsor" src="/images/sponsors/google-cloud-text.png" alt="Google Cloud" />
+			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
 			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" />
+			<img class="sponsor" src="/images/sponsors/figma.png" alt="Figma" />
 		</div>
 	</div>
 	<div class="thank-you-message">
@@ -33,15 +37,19 @@
 
 <style lang="scss">
 	.sponsor-list {
-		margin-top: 4em;
+		margin-top: 6em;
 		margin-bottom: 6em;
 		display: flex;
 		flex-flow: column;
 		gap: 6em;
 		align-items: center;
 
+		@include respond-to('small') {
+			margin: inherit auto;
+			width: 90%;
+		}
+
 		.sponsor {
-			max-height: 90px;
 			max-width: 100%;
 
 			img {
@@ -73,19 +81,34 @@
 		.tier-1 {
 			width: 50%;
 			background-color: $gold;
+			.sponsor {
+				max-height: 110px;
+			}
 		}
 
 		.tier-3 {
 			background-color: $pink;
+			.sponsor {
+				max-height: 35px;
+			}
 		}
 	}
 	.thank-you-message {
 		text-align: center;
 		margin: auto;
+		margin-top: 4em;
 		width: 60%;
 
 		img {
 			width: 100px;
 		}
+	}
+
+	.macaron-stack {
+		max-height: 150px;
+		max-width: 100%;
+		padding-left: 0.25em;
+		padding-bottom: 1em;
+		transform: translateY(50%);
 	}
 </style>
