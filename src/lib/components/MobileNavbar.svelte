@@ -60,6 +60,9 @@
 				<li class:active={activeSection == 'about'}>
 					<a href="#about" on:click={toggleActive}>About</a>
 				</li>
+				<li class:active={activeSection == 'schedule'}>
+					<a href="#schedule" on:click={toggleActive}>Schedule</a>
+				</li>
 				<li class:active={activeSection == 'faqs'}>
 					<a href="#faqs" on:click={toggleActive}>FAQs</a>
 				</li>
