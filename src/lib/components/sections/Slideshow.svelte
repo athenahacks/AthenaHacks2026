@@ -113,10 +113,12 @@
 				.slide-image {
 					flex: 1;
 					display: block;
+					height: 300px;
+					width: 300px;
+					text-align: center;
 
 					img {
-						height: 300px;
-						width: 300px;
+						object-fit: contain;
 						border-radius: 1.5em;
 					}
 				}
