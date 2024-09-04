@@ -11,6 +11,7 @@
 	import Team from '$lib/components/sections/Team.svelte';
 	import MobileNavbar from '$lib/components/MobileNavbar.svelte';
 	import Schedule from '$lib/components/sections/Schedule.svelte';
+	import MemoryLane from '$lib/components/sections/MemoryLane.svelte';
 </script>
 
 <svelte:head>
@@ -34,6 +35,7 @@
 <Schedule />
 <div class="divider3-wrap"><img class="divider3" src="images/divider3.png" alt="Divider" /></div>
 <Faqs />
+<!-- <MemoryLane /> -->
 <Sponsors />
 <Keynote />
 <Team />
