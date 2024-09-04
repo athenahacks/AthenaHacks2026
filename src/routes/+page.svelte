@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '$lib/scss/_globals.scss';
-	import DesktopNavbar from '$lib/components/DesktopNavbar.svelte';
+	import DesktopNavbar from '$lib/components/NavbarDesktop.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import HeroSection from '$lib/components/sections/HeroSection.svelte';
 	import About from '$lib/components/sections/About.svelte';
@@ -9,7 +9,7 @@
 	import Faqs from '$lib/components/sections/Faqs.svelte';
 	import Sponsors from '$lib/components/sections/Sponsors.svelte';
 	import Team from '$lib/components/sections/Team.svelte';
-	import MobileNavbar from '$lib/components/MobileNavbar.svelte';
+	import MobileNavbar from '$lib/components/NavbarMobile.svelte';
 	import Schedule from '$lib/components/sections/Schedule.svelte';
 	import MemoryLane from '$lib/components/sections/MemoryLane.svelte';
 </script>
@@ -39,6 +39,7 @@
 <Sponsors />
 <Keynote />
 <Team />
+
 <Footer />
 
 <style lang="scss">

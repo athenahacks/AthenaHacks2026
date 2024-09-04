@@ -1,4 +1,7 @@
-// Adapted from https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+/** 
+ * Used to easily create responsive styles based on viewport width.
+ * Adapted from https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/ 
+ */
 
 $breakpoints: (
     'small': (max-width: 767px),

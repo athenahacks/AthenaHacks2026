@@ -5,6 +5,10 @@
 	let navList: HTMLUListElement;
 	$: activeSection;
 
+	/** 
+	 * Activated when user taps on a navbar item. Toggles the active styling 
+	 * on that item and scrolls to the corresponding section. 
+	 */
 	function toggleActive(event: any) {
 		event.preventDefault();
 

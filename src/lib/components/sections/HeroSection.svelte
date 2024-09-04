@@ -9,6 +9,11 @@
 		<img src="/images/hero-section-chocobar.png" alt="AthenaHacks chocolate keyboard. March 2-3" />
 	</div>
 	<div class="content">
+		<!-- [BEGIN] Organizer application links -->
+		 <!-- TODO: Add application links -->
+		<!-- [END] Organizer application links -->
+
+		<!-- [BEGIN] Hackathon application links -->
 		<!-- <Button
 			tilt="left"
 			backgroundColor="blue"
@@ -27,6 +32,7 @@
 			href="https://airtable.com/appC2yvmYQ33jcGYT/shrhXDTWiI3Th8VT0"
 			target="_blank">AthenaHacks 2024 Volunteer Application</Button
 		> -->
+		<!-- [END] application links -->
 		<Socials />
 		<div class="tech-together">
 			<p><small><i>AthenaHacks powered by </i></small></p>

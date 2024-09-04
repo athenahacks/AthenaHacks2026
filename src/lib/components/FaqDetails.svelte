@@ -1,3 +1,4 @@
+<!-- Individual dropdown component used in Faqs.svelte -->
 <script lang="ts">
 	export let question: string;
 	export let answer: string;

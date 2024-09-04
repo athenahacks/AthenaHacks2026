@@ -12,14 +12,21 @@
 		['Programs', import.meta.glob('$lib/images/people/programs/*.jpg')]
 	]);
 
+	/** Info from data/team.yml.*/
 	const teamData: { [key: string]: any } = data;
 
+	/** 
+	 * Given a folder location, iterate and retrieve all images.
+	 *   - Parse images for src string.
+	 *   - Parse filename for organizer's first/last name.
+	 *   - Look up organizer in teamData to get any additional data.  
+	 */
 	async function loadProfilePhotosFromModule(module: any) {
 		const iterableModule = Object.entries(module);
 		const images = await Promise.all(
 			iterableModule.map(async ([filepath, resolver]: any) => {
-				// Resolve image src from file system
 				const imageData: any = await resolver().then(({ default: imageUrl }: any) => {
+					// Parse organizer name from image filename.
 					let name: string = filepath.split('\\').pop()!.split('/').pop()!;
 					name = name
 						.replace(/\.[^/.]+$/, '')
@@ -27,6 +34,8 @@
 						.replace(/\w\S*/g, function (txt: string) {
 							return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
 						});
+						
+					// Join image data with any additional teamData.
 					return {
 						name: name,
 						data: teamData[name] ?? null,
@@ -36,7 +45,6 @@
 				return imageData;
 			})
 		);
-		// console.log(images);
 		return images;
 	}
 </script>
@@ -44,7 +52,8 @@
 <section id="team">
 	<Header>Our Team</Header>
 	<div class="team-gallery">
-		{#each [...modules] as [dept, module]}
+		<!-- Iterate through each folder containing images from each team. -->
+		{#each [...modules] as [team, module]}
 			{#await loadProfilePhotosFromModule(module) then images}
 				{#each images as { name, data, src }}
 					<div class="profile-item">
@@ -61,7 +70,7 @@
 								<p class="name">{name}</p>
 								<p>
 									<small><i>({data?.pronouns ?? 'she/her'})</i></small><br />
-									<small>{dept}</small>
+									<small>{team}</small>
 								</p>
 							</figcaption>
 						</figure>
