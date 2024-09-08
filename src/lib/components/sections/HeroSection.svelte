@@ -14,6 +14,12 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
+		<Button
+			tilt="left"
+			backgroundColor="gold"
+			href="https://docs.google.com/forms/d/e/1FAIpQLSdqOgPcH2zSmEZerORxW13PubusZdtMttMavNi4oybVytdHVg/viewform?usp=sf_link"
+			target="_blank">Apply to be an Organizer!</Button
+		>
 		<!-- <Button
 			tilt="left"
 			backgroundColor="blue"
