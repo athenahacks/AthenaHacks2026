@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>AthenaHacks 2024</title>
+	<title>AthenaHacks 2025</title>
 </svelte:head>
 
 <div class="navbars">

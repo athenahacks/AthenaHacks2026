@@ -5,8 +5,8 @@
 
 <section>
 	<div class="background"></div>
-	<div class="chocolate">
-		<img src="/images/hero-section-chocobar.png" alt="AthenaHacks chocolate keyboard. March 2-3" />
+	<div class="leaf">
+		<img src="/images/hero-section-leaf.png" alt="AthenaHacks leaf. March 8-9" />
 	</div>
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
@@ -14,6 +14,12 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
+		<Button
+			tilt="left"
+			backgroundColor="earth-green"
+			href="https://docs.google.com/forms/d/e/1FAIpQLSdqOgPcH2zSmEZerORxW13PubusZdtMttMavNi4oybVytdHVg/viewform?usp=sf_link"
+			target="_blank">Apply to be an Organizer!</Button
+		>
 		<!-- <Button
 			tilt="left"
 			backgroundColor="blue"
@@ -57,15 +63,15 @@
 			padding-top: 80%;
 		}
 
-		.chocolate {
+		.leaf {
 			position: absolute;
-			top: 15%;
+			top: 10%;
 			text-align: center;
 			pointer-events: none;
 
 			img {
 				width: 60%;
-				animation: infiniteFloating 4s ease-in-out infinite;
+				animation: infiniteFloating 3s ease-in-out infinite;
 			}
 		}
 
@@ -94,10 +100,10 @@
 				padding-top: 130%;
 			}
 
-			.chocolate {
+			.leaf {
 				top: 20%;
 				img {
-					width: 80%;
+					width: 90%;
 				}
 			}
 		}
@@ -107,7 +113,7 @@
 				padding-top: 220%;
 			}
 
-			.chocolate {
+			.leaf {
 				top: 15%;
 				img {
 					width: 90%;
