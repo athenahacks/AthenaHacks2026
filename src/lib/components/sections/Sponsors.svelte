@@ -8,20 +8,24 @@
 		<img class="macaron-stack" src="/images/macaron-stack.png" alt="macaron stack" />
 	</Header>
 	<div class="sponsor-list">
-		<div class="section tier-1">
-			<img class="macaron" src="/images/macaron-gold.png" alt="macaron decoration" />
-			<img
+		<!-- <div class="section tier-1">
+			<img class="macaron" src="/images/macaron-gold.png" alt="macaron decoration" /> -->
+			<!-- <img
 				class="sponsor"
 				src="/images/sponsors/bloomberg-engineering.png"
 				alt="Bloomberg Engineering"
-			/>
-			<img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" />
-		</div>
+			/> -->
+			<!-- <img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" /> -->
+		<!-- </div>
+		<div class="section tier-2">
+			<img class="macaron" src="/images/macaron-blue.png" alt="macaron decoration" />
+		</div> -->
 		<div class="section tier-3">
 			<img class="macaron" src="/images/macaron-pink.png" alt="macaron decoration" />
-			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
-			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" />
-			<!-- <img class="sponsor" src="/images/sponsors/figma.png" alt="Figma" /> -->
+
+			<!-- <img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
+			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> -->
+			<img class="sponsor" src="/images/sponsors/qualcomm.png" alt="qualcomm" />
 		</div>
 	</div>
 	<div class="thank-you-message">
@@ -79,14 +83,23 @@
 		}
 
 		.tier-1 {
-			width: 50%;
+			width: 15%;
 			background-color: $gold;
 			.sponsor {
 				max-height: 110px;
 			}
 		}
 
+		.tier-2 {
+			width: 30%;
+			background-color: $blue;
+			.sponsor {
+				max-height: 110px;
+			}
+		}
+
 		.tier-3 {
+			width: 30%;
 			background-color: $pink;
 			.sponsor {
 				max-height: 35px;
