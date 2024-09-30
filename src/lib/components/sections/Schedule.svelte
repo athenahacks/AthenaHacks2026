@@ -2,14 +2,14 @@
 	import Header from '../Header.svelte';
 </script>
 
-<section id="schedule">
+<!-- <section id="schedule">
 	<Header>Schedule</Header>
     <p>Take a look at the schedule for the hackathon this weekend! Get excited for the workshops, socials, and food!</p>
 	<div class="schedule">
 		<div><img src="images/schedule1.png" alt="Saturday schedule" /></div>
 		<div><img src="images/schedule2.png" alt="Sunday schedule" /></div>
 	</div>
-</section>
+</section> -->
 
 <style lang="scss">
 	.schedule {
