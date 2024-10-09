@@ -31,7 +31,7 @@
 	<div class="thank-you-message">
 		<p>
 			A huge thank you to all our sponsors and contributors! If you're interested in sponsoring
-			AthenaHacks 2024, please contact us at <a href="mailto:athenahacks@gmail.com"
+			AthenaHacks 2025, please contact us at <a href="mailto:athenahacks@gmail.com"
 				>athenahacks@gmail.com</a
 			>
 		</p>
@@ -82,25 +82,25 @@
 			}
 		}
 
-		.tier-1 {
-			width: 15%;
-			background-color: $gold;
-			.sponsor {
-				max-height: 110px;
-			}
-		}
+		// .tier-1 {
+		// 	width: 15%;
+		// 	background-color: $gold;
+		// 	.sponsor {
+		// 		max-height: 110px;
+		// 	}
+		// }
 
-		.tier-2 {
-			width: 30%;
-			background-color: $blue;
-			.sponsor {
-				max-height: 110px;
-			}
-		}
+		// .tier-2 {
+		// 	width: 30%;
+		// 	background-color: $blue;
+		// 	.sponsor {
+		// 		max-height: 110px;
+		// 	}
+		// }
 
 		.tier-3 {
 			width: 30%;
-			background-color: $pink;
+			background-color: $lime;
 			.sponsor {
 				max-height: 35px;
 			}

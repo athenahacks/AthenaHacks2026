@@ -59,23 +59,23 @@
 		<div class="navbar">
 			<ul>
 				<li class:active={activeSection == 'home'}>
-					<a href="#" on:click={scrollToTop}>Home</a>
+					<a href="#/" on:click={scrollToTop}>Home</a>
 				</li>
 				<li class:active={activeSection == 'about'}>
 					<a href="#about" on:click={toggleActive}>About</a>
 				</li>
-				<li class:active={activeSection == 'schedule'}>
+				<!-- <li class:active={activeSection == 'schedule'}>
 					<a href="#schedule" on:click={toggleActive}>Schedule</a>
-				</li>
+				</li> -->
 				<li class:active={activeSection == 'faqs'}>
 					<a href="#faqs" on:click={toggleActive}>FAQs</a>
 				</li>
 				<li class:active={activeSection == 'sponsors'}>
 					<a href="#sponsors" on:click={toggleActive}>Sponsors</a>
 				</li>
-				<li class:active={activeSection == 'keynote'}>
+				<!-- <li class:active={activeSection == 'keynote'}>
 					<a href="#keynote" on:click={toggleActive}>Keynote</a>
-				</li>
+				</li> -->
 				<li class:active={activeSection == 'team'}>
 					<a href="#team" on:click={toggleActive}>Team</a>
 				</li>
@@ -143,7 +143,8 @@
 
 		.logo {
 			border: none;
-			background-color: $green;
+			// background-color: $green;
+			background-color: $lime;
 			padding: 0.5em 0.75em;
 			font-size: 1.2rem;
 			border-radius: 0.5em;
@@ -178,7 +179,7 @@
 				width 300ms ease-in-out,
 				padding 0ms 300ms linear,
 				outline 0ms 300ms linear;
-			background-color: $blue;
+			background-color: $green;
 			padding: 0;
 
 			ul {
@@ -194,7 +195,7 @@
 					padding: 0.25em;
 
 					&.active {
-						background-color: $dark-blue;
+						background-color: $lime;
 						border: 2px solid $brown;
 						border-radius: 0.5em;
 					}

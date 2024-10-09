@@ -70,7 +70,7 @@
 			flex-flow: column;
 			h2 {
 				font-family: 'Lilita One', sans-serif;
-				color: $purple;
+				color: $text-green;
 				margin: 0.25em 0;
 				font-size: 3.5rem;
 				font-weight: 400;
@@ -90,7 +90,7 @@
 				}
 
 				&.active {
-					color: $text-pink;
+					color: $pink;
 
 					&::before {
 						content: '🍰';
