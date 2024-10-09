@@ -2,7 +2,7 @@
 	import Header from '../Header.svelte';
 </script>
 
-<!-- <section id="keynote">
+<section id="keynote">
 	<Header>Keynote</Header>
 	<div class="keynote-wrapper">
 		<div class="image">
@@ -26,9 +26,9 @@
 			</p>
 		</div>
 	</div>
-</section> -->
+</section> 
 
-<!-- <style lang="scss">
+<style lang="scss">
 	.keynote-wrapper {
 		display: flex;
 		justify-content: center;
@@ -82,4 +82,4 @@
 			}
 		}
 	} 
-</style> -->
+</style>

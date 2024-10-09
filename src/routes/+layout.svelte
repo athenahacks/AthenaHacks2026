@@ -47,12 +47,6 @@
 					width: 30%;
 					height: auto;
 				}
-
-				// p {
-				// 	font-family: 'Lilita One', sans-serif;
-				// 	color: $brown;
-				// 	font-size: 2rem;
-				// }
 			}
 		}
 	}

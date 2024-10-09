@@ -3,7 +3,7 @@
 
 <script lang="ts">
 	type TiltRange = 'left' | 'right' | 'none';
-	type ButtonBackgroundColors = 'blue' | 'pink' | 'gold' | 'green';
+	type ButtonBackgroundColors = 'blue' | 'pink' | 'gold' | 'lime';
 
 	export let tilt: TiltRange;
 	export let backgroundColor: ButtonBackgroundColors;
@@ -62,7 +62,7 @@
 	.bg-gold {
 		background-color: $gold;
 	}
-	.bg-green {
+	.bg-lime {
 		background-color: $lime;
 	}
 

@@ -11,15 +11,15 @@
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
 		 <!-- TODO: Add application links -->
-		<!-- [END] Organizer application links -->
-
-		<!-- [BEGIN] Hackathon application links -->
-		<!-- <Button
+		  <!-- <Button
 			tilt="left"
 			backgroundColor="lime"
 			href="https://docs.google.com/forms/d/e/1FAIpQLSdqOgPcH2zSmEZerORxW13PubusZdtMttMavNi4oybVytdHVg/viewform?usp=sf_link"
 			target="_blank">Apply to be an Organizer!</Button
 		> -->
+		<!-- [END] Organizer application links -->
+
+		<!-- [BEGIN] Hackathon application links -->
 		<!-- <Button
 			tilt="left"
 			backgroundColor="blue"
