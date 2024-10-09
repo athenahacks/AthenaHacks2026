@@ -63,7 +63,7 @@
 		// Blue background
 		&::before {
 			content: '';
-			background-color: $blue;
+			background-color: $beige;
 			position: absolute;
 			inset: 3px 0 0 0;
 			z-index: -1;

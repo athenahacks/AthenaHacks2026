@@ -82,25 +82,25 @@
 			}
 		}
 
-		.tier-1 {
-			width: 15%;
-			background-color: $gold;
-			.sponsor {
-				max-height: 110px;
-			}
-		}
+		// .tier-1 {
+		// 	width: 15%;
+		// 	background-color: $gold;
+		// 	.sponsor {
+		// 		max-height: 110px;
+		// 	}
+		// }
 
-		.tier-2 {
-			width: 30%;
-			background-color: $blue;
-			.sponsor {
-				max-height: 110px;
-			}
-		}
+		// .tier-2 {
+		// 	width: 30%;
+		// 	background-color: $blue;
+		// 	.sponsor {
+		// 		max-height: 110px;
+		// 	}
+		// }
 
 		.tier-3 {
 			width: 30%;
-			background-color: $pink;
+			background-color: $lime;
 			.sponsor {
 				max-height: 35px;
 			}

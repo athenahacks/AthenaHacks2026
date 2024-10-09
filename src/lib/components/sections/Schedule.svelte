@@ -12,23 +12,23 @@
 </section> -->
 
 <style lang="scss">
-	.schedule {
-        margin-top: 3em;
-		display: flex;
-		position: relative;
-		gap: 4em 3em;
+	// .schedule {
+    //     margin-top: 3em;
+	// 	display: flex;
+	// 	position: relative;
+	// 	gap: 4em 3em;
 
-        @include respond-to('small') {
-            flex-direction: column;
-        }
+    //     @include respond-to('small') {
+    //         flex-direction: column;
+    //     }
 
-		div {
-			flex: 1;
-			img {
-				border-radius: 1.2em;
-				border: $brown 3px solid;
-				width: 100%;
-			}
-		}
-	}
+	// 	div {
+	// 		flex: 1;
+	// 		img {
+	// 			border-radius: 1.2em;
+	// 			border: $brown 3px solid;
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
 </style>

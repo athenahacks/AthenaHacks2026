@@ -28,7 +28,7 @@
 	</div>
 </section> -->
 
-<style lang="scss">
+<!-- <style lang="scss">
 	.keynote-wrapper {
 		display: flex;
 		justify-content: center;
@@ -81,5 +81,5 @@
 				text-align: center;
 			}
 		}
-	}
-</style>
+	} 
+</style> -->

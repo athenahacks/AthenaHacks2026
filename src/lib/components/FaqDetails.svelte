@@ -78,7 +78,7 @@
 
 	.content {
 		margin-top: 2px;
-		background-color: $blue;
+		background-color: $beige;
 		border-radius: 0.75em 0em 0.75em 0.75em;
 		outline: 2px solid transparent;
 

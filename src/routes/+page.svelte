@@ -5,12 +5,12 @@
 	import HeroSection from '$lib/components/sections/HeroSection.svelte';
 	import About from '$lib/components/sections/About.svelte';
 	import Slideshow from '$lib/components/sections/Slideshow.svelte';
-	import Keynote from '$lib/components/sections/Keynote.svelte';
+	// import Keynote from '$lib/components/sections/Keynote.svelte';
 	import Faqs from '$lib/components/sections/Faqs.svelte';
 	import Sponsors from '$lib/components/sections/Sponsors.svelte';
 	import Team from '$lib/components/sections/Team.svelte';
 	import MobileNavbar from '$lib/components/NavbarMobile.svelte';
-	import Schedule from '$lib/components/sections/Schedule.svelte';
+	// import Schedule from '$lib/components/sections/Schedule.svelte';
 	import MemoryLane from '$lib/components/sections/MemoryLane.svelte';
 </script>
 
@@ -32,12 +32,12 @@
 <img class="divider1" src="images/divider1.png" alt="Divider" />
 <Slideshow />
 <img class="divider2" src="images/divider2.png" alt="Divider" />
-<Schedule />
+<!-- <Schedule /> -->
 <div class="divider3-wrap"><img class="divider3" src="images/divider3.png" alt="Divider" /></div>
 <Faqs />
 <!-- <MemoryLane /> -->
 <Sponsors />
-<Keynote />
+<!-- <Keynote /> -->
 <Team />
 
 <Footer />
