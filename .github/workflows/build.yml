@@ -17,6 +17,9 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          PUBLIC_GOOGLE_SHEETS_URL: ${{ secrets.PUBLIC_GOOGLE_SHEETS_URL }}
+          PUBLIC_EMAIL: ${{ secrets.PUBLIC_EMAIL }}
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v2
