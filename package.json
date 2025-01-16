@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite -r dotenv/config build",
+		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -36,7 +36,6 @@
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.5.1",
 		"@fortawesome/free-solid-svg-icons": "^6.5.1",
-		"dotenv": "^16.4.7",
 		"svelte-fa": "^3.0.4"
 	}
 }
