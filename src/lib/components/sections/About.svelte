@@ -3,9 +3,6 @@
 </script>
 
 <section id="about">
-	<div class="image">
-		<img src="/images/about.png" alt="Milkshake owl" />
-	</div>
 	<div class="content">
 		<Header>What is AthenaHacks?</Header>
 		<p>
@@ -36,6 +33,9 @@
 			>
 		</div>
 	</div>
+	<div class="image">
+		<img class= "owl" src="/images/about.png" alt="watering can owl" />
+	</div>
 </section>
 
 <style lang="scss">
@@ -43,6 +43,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 4em;
+		padding-top: 50px;
 
 		.content {
 			flex: 1;
@@ -67,14 +68,29 @@
 			}
 		}
 
+		.image {
+			z-index: 4;
+			margin: 0;
+			padding: 0;
+			width: 40%; /* Adjust size of the image container */
+			display: flex;
+			justify-content: center; /* Center the image horizontally */
+			align-items: center; /* Center the image vertically */
+
+			img {
+				width: 85%; /* Scale image responsively */
+				animation: infiniteFloating 3s ease-in-out infinite; /* Apply floating animation */
+			}
+		}
+
 		@include respond-to('medium') {
 			margin-top: -4em;
 			flex-flow: column;
 
 			.image {
-				z-index: 10;
-				margin: auto;
-				width: 65%;
+				width: 70%;
+				height: 70%;
+
 				img {
 					width: 100%;
 				}
@@ -88,6 +104,18 @@
 			.image {
 				width: 80%;
 			}
+		}
+	}
+
+	@keyframes infiniteFloating {
+		0% {
+			transform: rotate(-7deg) translateY(18px);
+		}
+		50% {
+			transform: rotate(-7.5deg) translateY(-18px);
+		}
+		100% {
+			transform: rotate(-7deg) translateY(18px);
 		}
 	}
 </style>
