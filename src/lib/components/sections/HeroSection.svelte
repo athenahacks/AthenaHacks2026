@@ -40,10 +40,10 @@
 		> 
 		<!-- [END] application links -->
 		<Socials />
-		<div class="tech-together">
+		<!-- <div class="tech-together">
 			<p><small><i>AthenaHacks powered by </i></small></p>
 			<img src="/images/sponsors/tech-together.png" alt="TechTogether logo">
-		</div>
+		</div> -->
 	</div>
 </section>
 
