@@ -20,24 +20,24 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
-		<!-- <Button
+		<Button
 			tilt="left"
-			backgroundColor="blue"
+			backgroundColor="light-pink"
 			href="https://airtable.com/appC2yvmYQ33jcGYT/shrNWwl77LcMu7f1G"
-			target="_blank">AthenaHacks 2024 Hacker Application</Button
+			target="_blank">2025 Hacker Application</Button
 		>
 		<Button
 			tilt="right"
 			backgroundColor="pink"
 			href="https://airtable.com/appC2yvmYQ33jcGYT/shrCzdzj5vyRfqXfl"
-			target="_blank">AthenaHacks 2024 Mentor Application</Button
+			target="_blank">2025 Mentor Application</Button
 		>
 		<Button
 			tilt="left"
-			backgroundColor="gold"
+			backgroundColor="dark-pink"
 			href="https://airtable.com/appC2yvmYQ33jcGYT/shrhXDTWiI3Th8VT0"
-			target="_blank">AthenaHacks 2024 Volunteer Application</Button
-		> -->
+			target="_blank">2025 Volunteer Application</Button
+		> 
 		<!-- [END] application links -->
 		<Socials />
 		<div class="tech-together">
@@ -60,17 +60,17 @@
 			background-repeat: no-repeat;
 			width: 100%;
 			height: 0;
-			padding-top: 80%;
+			padding-top: 110%;
 		}
 
 		.leaf {
 			position: absolute;
-			top: 10%;
+			top: 12%;
 			text-align: center;
 			pointer-events: none;
 
 			img {
-				width: 60%;
+				width: 70%;
 				animation: infiniteFloating 3s ease-in-out infinite;
 			}
 		}
@@ -80,8 +80,8 @@
 			flex-direction: column;
 			column-gap: 1em;
 			align-items: flex-end;
-			top: 56%;
-			right: 10em;
+			top: 53%;
+			left: 30em;
 			position: absolute;
 
 			.tech-together {
@@ -135,14 +135,14 @@
 	@keyframes infiniteFloating {
 		0% {
 			transform: scale(1.1);
-			transform: rotate(-0.5deg) translateY(20px);
+			transform: rotate(-7deg) translateY(20px);
 		}
 		50% {
 			transform: scale(1);
-			transform: translateY(-20px) rotate(0.5deg);
+			transform: translateY(-20px) rotate(-7.5deg);
 		}
 		100% {
-			transform: rotate(-0.5deg) translateY(20px);
+			transform: rotate(-7deg) translateY(20px);
 		}
 	}
 </style>

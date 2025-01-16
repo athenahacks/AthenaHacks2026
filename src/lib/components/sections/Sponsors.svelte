@@ -4,12 +4,12 @@
 
 <section id="sponsors">
 	<Header
-		>Sponsors
-		<img class="macaron-stack" src="/images/macaron-stack.png" alt="macaron stack" />
+		>Our Sponsors
+		<!-- <img class="macaron-stack" src="/images/macaron-stack.png" alt="macaron stack" /> -->
 	</Header>
 	<div class="sponsor-list">
 		<!-- <div class="section tier-1">
-			<img class="macaron" src="/images/macaron-gold.png" alt="macaron decoration" /> -->
+			<img class="snail" src="/images/snail-pink.png" alt="snail decoration" /> -->
 			<!-- <img
 				class="sponsor"
 				src="/images/sponsors/bloomberg-engineering.png"
@@ -18,10 +18,10 @@
 			<!-- <img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" /> -->
 		<!-- </div>
 		<div class="section tier-2">
-			<img class="macaron" src="/images/macaron-blue.png" alt="macaron decoration" />
+			<img class="snail" src="/images/snail-brown.png" alt="snail decoration" />
 		</div> -->
 		<div class="section tier-3">
-			<img class="macaron" src="/images/macaron-pink.png" alt="macaron decoration" />
+			<img class="snail" src="/images/snail-green.png" alt="snail decoration" />
 
 			<!-- <img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
 			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> -->
@@ -35,7 +35,7 @@
 				>athenahacks@gmail.com</a
 			>
 		</p>
-		<img src="/images/pencil.png" alt="Pencil" />
+		<img src="/images/feather.png" alt="feather" />
 	</div>
 </section>
 
@@ -72,19 +72,19 @@
 			filter: drop-shadow(0.4em 0.4em 0 $brown);
 			position: relative;
 
-			.macaron {
-				width: 100px;
+			.snail {
+				width: 170px;
 				height: 100px;
 				position: absolute;
-				top: -40px;
-				right: -40px;
+				top: -55px;
+				right: -50px;
 				filter: drop-shadow(-0.05em 0.15em 0 $brown);
 			}
 		}
 
 		// .tier-1 {
 		// 	width: 15%;
-		// 	background-color: $gold;
+		// 	background-color: $pink;
 		// 	.sponsor {
 		// 		max-height: 110px;
 		// 	}
@@ -92,7 +92,7 @@
 
 		// .tier-2 {
 		// 	width: 30%;
-		// 	background-color: $blue;
+		// 	background-color: $beige;
 		// 	.sponsor {
 		// 		max-height: 110px;
 		// 	}
@@ -113,15 +113,7 @@
 		width: 60%;
 
 		img {
-			width: 100px;
+			width: 170px;
 		}
-	}
-
-	.macaron-stack {
-		max-height: 150px;
-		max-width: 100%;
-		padding-left: 0.25em;
-		padding-bottom: 1em;
-		transform: translateY(50%);
 	}
 </style>

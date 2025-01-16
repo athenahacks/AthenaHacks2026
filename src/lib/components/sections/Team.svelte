@@ -49,11 +49,16 @@
 	}
 </script>
 
+<!-- accent decorations -->
+<img class="left-branch" src="images/divider1.png" alt="Divider1" />
+<img class="right-branch" src="images/divider3.png" alt="Divider3" />
+
 <section id="team">
 	<Header>Our Team</Header>
 	<div class="team-gallery">
 		<!-- Iterate through each folder containing images from each team. -->
 		{#each [...modules] as [team, module]}
+		<!-- <h2>{team}</h2>  -->
 			{#await loadProfilePhotosFromModule(module) then images}
 				{#each images as { name, data, src }}
 					<div class="profile-item">
@@ -82,6 +87,34 @@
 </section>
 
 <style lang="scss">
+	.left-branch {
+		width: 45%;
+		margin-bottom: -240px;
+		margin-top: 50px;
+
+		@include respond-to('medium') {
+			width: 40%;
+		}
+
+		@include respond-to('small') {
+			width: 35%;
+		}
+	}
+
+	.right-branch {
+		width: 50%;
+		margin-left: auto;
+		margin-bottom: -140px;
+
+		@include respond-to('medium') {
+			width: 45%;
+		}
+
+		@include respond-to('small') {
+			width: 40%;
+		}
+	}
+
 	.team-gallery {
 		display: flex;
 		flex-direction: row;

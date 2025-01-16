@@ -124,7 +124,7 @@
 		pointer-events: all;
 
 		.home-square {
-			z-index: 200;
+			z-index: 190;
 			background: transparent;
 			border: none;
 			margin: 1em;
@@ -142,7 +142,7 @@
 
 			img {
 				pointer-events: none;
-				width: 100%;
+				width: 70%;
 				filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
 			}
 		}
@@ -159,7 +159,7 @@
 			overflow: visible;
 			left: 0;
 			right: 0;
-
+			
 			.navbar {
 				background-color: $lime;
 				box-sizing: border-box;
@@ -182,7 +182,7 @@
 						content: '';
 						position: absolute;
 						height: 100%;
-						background-color: $beige;
+						background-color: $pink;
 						outline: 3px solid $brown;
 						border-radius: 1em;
 						width: var(--activeWidth);

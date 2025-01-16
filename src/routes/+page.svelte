@@ -29,17 +29,15 @@
 
 <HeroSection />
 <About />
-<img class="divider1" src="images/divider1.png" alt="Divider" />
+<img class="divider1" src="images/divider1.png" alt="Divider1" />
 <Slideshow />
-<img class="divider2" src="images/divider2.png" alt="Divider" />
 <!-- <Schedule /> -->
-<div class="divider3-wrap"><img class="divider3" src="images/divider3.png" alt="Divider" /></div>
+<img class="divider2" src="images/divider2.png" alt="Divider2" />
 <Faqs />
 <!-- <MemoryLane /> -->
 <Sponsors />
 <!-- <Keynote /> -->
 <Team />
-
 <Footer />
 
 <style lang="scss">
@@ -57,39 +55,29 @@
 		}
 	}
 	.divider1 {
-		width: 25%;
+		width: 45%;
+		padding-bottom: 10px;
 
 		@include respond-to('medium') {
 			width: 40%;
 		}
 
 		@include respond-to('small') {
-			width: 50%;
+			width: 35%;
 		}
 	}
 
 	.divider2 {
-		width: 15%;
+		width: 40%;
+		margin-left: auto;
 
 		@include respond-to('medium') {
-			width: 30%;
+			width: 35%;
 		}
 
 		@include respond-to('small') {
-			width: 40%;
+			width: 30%;
 		}
 	}
 
-	.divider3-wrap {
-		display: flex;
-		width: 100%;
-		justify-content: flex-end;
-		.divider3 {
-			right: 0;
-			width: 25%;
-			@include respond-to('medium') {
-				width: 70%;
-			}
-		}
-	}
 </style>
