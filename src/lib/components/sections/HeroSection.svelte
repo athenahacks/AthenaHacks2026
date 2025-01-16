@@ -20,24 +20,24 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
-		<Button
+		<!-- <Button
 			tilt="left"
 			backgroundColor="light-pink"
-			href="https://airtable.com/appC2yvmYQ33jcGYT/shrNWwl77LcMu7f1G"
+			href="apply-hacker"
 			target="_blank">2025 Hacker Application</Button
-		>
-		<Button
+		> -->
+		<!-- <Button
 			tilt="right"
 			backgroundColor="pink"
-			href="https://airtable.com/appC2yvmYQ33jcGYT/shrCzdzj5vyRfqXfl"
+			href="TODO"
 			target="_blank">2025 Mentor Application</Button
 		>
 		<Button
 			tilt="left"
 			backgroundColor="dark-pink"
-			href="https://airtable.com/appC2yvmYQ33jcGYT/shrhXDTWiI3Th8VT0"
+			href="TODO"
 			target="_blank">2025 Volunteer Application</Button
-		> 
+		>  -->
 		<!-- [END] application links -->
 		<Socials />
 		<div class="tech-together">
