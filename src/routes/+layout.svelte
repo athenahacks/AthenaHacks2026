@@ -13,7 +13,7 @@
 	{#if preloadVisible}
 		<div id="preloader" transition:fade={{ duration: 300 }}>
 			<div class="gif">
-				<img src="/images/preloader.gif" alt="Animation of bird typing" />
+				<img src="/images/preloader.gif" alt="flower blooming" />
 			</div>
 		</div>
 	{/if}

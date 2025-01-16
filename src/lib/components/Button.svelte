@@ -3,7 +3,7 @@
 
 <script lang="ts">
 	type TiltRange = 'left' | 'right' | 'none';
-	type ButtonBackgroundColors = 'blue' | 'pink' | 'gold' | 'lime';
+	type ButtonBackgroundColors = 'blue' | 'pink' | 'gold' | 'lime' | 'light-pink' | 'dark-pink';
 
 	export let tilt: TiltRange;
 	export let backgroundColor: ButtonBackgroundColors;
@@ -20,7 +20,7 @@
 <style lang="scss">
 	.button {
 		border: $brown 2px solid;
-		border-radius: 0.75em 0.75em 0em 0.75em;
+		border-radius: 0.9em 0.9em 0.9em 0.9em;
 		text-align: center;
 		padding: 0.5em 2em;
 		filter: drop-shadow(0.25em 0.25em 0 $brown);
@@ -65,5 +65,12 @@
 	.bg-lime {
 		background-color: $lime;
 	}
+	.bg-light-pink {
+		background-color: $light-pink;
+	}
+	.bg-dark-pink {
+		background-color: $dark-pink;
+	}
+
 
 </style>

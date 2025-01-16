@@ -14,13 +14,14 @@
 		</div>
 		<div class="image">
 			<figure>
-				<img src="/images/faq.png" alt="Pastry owl" />
+				<img src="/images/shovel_owl.png" alt="Shovel Owl" />
 				<figcaption>
 					Don’t see your question? Hit us up at <a href="mailto:athenahacks@gmail.com"
 						>athenahacks@gmail.com</a
 					>!
 				</figcaption>
 			</figure>
+			<img class="flower" src="/images/flower.png" alt="pink flower" />
 		</div>
 	</div>
 </section>
@@ -33,6 +34,11 @@
 
 		.questions {
 			flex: 2;
+		}
+
+		.flower {
+			padding-top: 150px;
+			padding-right: 20px;
 		}
 
 		.image {

@@ -57,6 +57,7 @@
 	section {
 		margin-top: 0;
 	}
+	
 	.slideshow {
 		margin: auto;
 		width: 80%;
@@ -70,7 +71,7 @@
 			flex-flow: column;
 			h2 {
 				font-family: 'Lilita One', sans-serif;
-				color: $text-green;
+				color: $text-brown;
 				margin: 0.25em 0;
 				font-size: 3.5rem;
 				font-weight: 400;
@@ -79,7 +80,7 @@
 				align-items: center;
 
 				&::before {
-					content: '🍰';
+					content: '🌸';
 					color: transparent;
 					margin-right: 0.5em;
 					font-size: 2.2rem;
@@ -93,7 +94,7 @@
 					color: $pink;
 
 					&::before {
-						content: '🍰';
+						content: '🌸';
 						color: black;
 						margin-right: 0.5em;
 						font-size: 2.2rem;
@@ -106,7 +107,7 @@
 			flex: 0.66;
 			.slide {
 				display: flex;
-				gap: 2em;
+				gap: 4em;
 				flex-wrap: wrap;
 				align-items: center;
 
@@ -116,7 +117,7 @@
 					height: 300px;
 					width: 300px;
 					text-align: center;
-
+					
 					img {
 						object-fit: contain;
 						border-radius: 1.5em;
