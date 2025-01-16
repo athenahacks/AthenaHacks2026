@@ -39,11 +39,11 @@
 			target="_blank">2025 Volunteer Application</Button
 		> 
 		<!-- [END] application links -->
-		<Socials />
-		<div class="tech-together">
+		<!-- <Socials /> -->
+		<!-- <div class="tech-together">
 			<p><small><i>AthenaHacks powered by </i></small></p>
 			<img src="/images/sponsors/tech-together.png" alt="TechTogether logo">
-		</div>
+		</div> -->
 	</div>
 </section>
 
@@ -84,15 +84,15 @@
 			left: 30em;
 			position: absolute;
 
-			.tech-together {
-				display: flex;
-				align-items: center;
+			// .tech-together {
+			// 	display: flex;
+			// 	align-items: center;
 
-				img {
-					height: 40px;
-					padding-left: 0.5em;
-				}
-			}
+			// 	img {
+			// 		height: 40px;
+			// 		padding-left: 0.5em;
+			// 	}
+			// }
 		}
 
 		@include respond-to('medium') {
