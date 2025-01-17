@@ -70,7 +70,7 @@
 		// Blue background
 		&::before {
 			content: '';
-			background-image: url('images/fence.png');
+			background-image: url('images/footer.png');
 			position: absolute;
 			inset: 3px 0 0 0;
 			z-index: -1;
