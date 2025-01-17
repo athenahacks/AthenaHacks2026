@@ -110,7 +110,7 @@ export async function handleSubmit(
 			return [key, JSON.stringify(val).replace('[', '').replaceAll('"', '').replaceAll(']', '')];
 		})
 	);
-	console.log(formJSON);
+	// console.log(formJSON);
 	form.reset();
 
 	// Send form information to backend.
