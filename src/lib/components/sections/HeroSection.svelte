@@ -20,12 +20,12 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
-		<!-- <Button
+		<Button
 			tilt="left"
 			backgroundColor="light-pink"
 			href="apply-hacker"
 			target="_blank">2025 Hacker Application</Button
-		> -->
+		>
 		<!-- <Button
 			tilt="right"
 			backgroundColor="pink"

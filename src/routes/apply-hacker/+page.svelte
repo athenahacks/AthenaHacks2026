@@ -10,6 +10,7 @@
 	import Header from '$lib/components/Header.svelte';
 
 	let form: HTMLFormElement;
+	let errorBox: HTMLParagraphElement;
 
 	let genderOtherChecked: boolean;
 	let pronounsOtherChecked: boolean;
@@ -22,9 +23,11 @@
 		const formMessage = result.formMessage ? result.formMessage : '';
 
 		if (formSuccess) {
-			window.alert("Thanks for applying! You'll hear back from us soon :)");
+			errorBox.textContent = "Thanks for applying! You'll hear back from us soon :)";
+			errorBox.style.color = "black";
 		} else {
-			window.alert(formMessage);
+			errorBox.textContent = formMessage;
+			errorBox.style.color = "red";
 		}
 	}
 </script>
@@ -35,7 +38,7 @@
 
 <form method="POST" on:submit|preventDefault={handleSubmitWrapper} bind:this={form}>
 	<div class="header">
-		<img src="" />
+		<img src="/images/shovel_owl.png" alt="Shovel Owl" />
 		<Header>AthenaHacks 2025 Hacker Application</Header>
 	</div>
 
@@ -505,7 +508,7 @@
 			<input name="hear_about_us" id="hear_about_us_student" type="checkbox" value="Student" />
 			<span>Student</span>
 		</label>
-		<label for="ethnicity_other">
+		<label for="hear_about_us_other">
 			<input
 				name="hear_about_us"
 				id="hear_about_us_other"
@@ -586,6 +589,7 @@
 	</div>
 
 	<button type="submit" id="submit">Submit</button>
+	<p class="errorBox" bind:this={errorBox}></p>
 </form>
 
 <style lang="scss">
@@ -601,7 +605,6 @@
 		}
 
 		img {
-			background-color: red;
 			width: 200px;
 			height: 200px;
 		}

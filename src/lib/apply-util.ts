@@ -100,22 +100,26 @@ export async function handleSubmit(
 	}
 
 	// Serialize form data.
-	const formObject = Object.fromEntries(
+	const formJSON = Object.fromEntries(
 		Array.from(data.keys(), (key) => {
 			const val = data.getAll(key);
+			if (val.length == 0) {
+				return [key, ""];
+			}
+			
 			return [key, JSON.stringify(val).replace('[', '').replaceAll('"', '').replaceAll(']', '')];
 		})
 	);
-	// console.log(formObject);
+	console.log(formJSON);
 	form.reset();
 
 	// Send form information to backend.
 	const response = await fetch(PUBLIC_GOOGLE_SHEETS_URL, {
 		method: 'POST',
 		headers: {
-			'Content-Type': 'text/plain;charset=utf-8'
+			'Content-Type': 'text/plain'
 		},
-		body: JSON.stringify(formObject)
+		body: JSON.stringify(formJSON)
 	});
 
 	const result = await response.json();
