@@ -57,9 +57,6 @@
 		// Tilted border
 		position: relative;
 		padding: 5em 2em 4em;
-		// background-color: $brown;
-		// isolation: isolate;
-		// clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 
 		display: flex;
 		justify-content: space-evenly;
@@ -73,12 +70,10 @@
 		// Blue background
 		&::before {
 			content: '';
-			// background-color: $beige;
 			background-image: url('images/fence.png');
 			position: absolute;
 			inset: 3px 0 0 0;
 			z-index: -1;
-			// clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 		}
 
 		h3 {
