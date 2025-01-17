@@ -123,7 +123,7 @@ export async function handleSubmit(
 	});
 
 	const result = await response.json();
-	if (result.result !== 'success') {
+	if (result.status !== 'success') {
 		return {
 			formSuccess: false,
 			formMessage: `Failed to submit application. Please email ${PUBLIC_EMAIL} for assistance.`
