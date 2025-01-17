@@ -7,6 +7,7 @@
 		verifyPositiveAndWholeNumber
 	} from '$lib/apply-util';
 	import '$lib/scss/_globals.scss';
+	import '$lib/scss/apply-common.scss';
 	import Header from '$lib/components/Header.svelte';
 
 	let form: HTMLFormElement;
@@ -24,10 +25,10 @@
 
 		if (formSuccess) {
 			errorBox.textContent = "Thanks for applying! You'll hear back from us soon :)";
-			errorBox.style.color = "black";
+			errorBox.style.color = 'black';
 		} else {
 			errorBox.textContent = formMessage;
-			errorBox.style.color = "red";
+			errorBox.style.color = 'red';
 		}
 	}
 </script>
@@ -41,6 +42,20 @@
 		<img src="/images/shovel_owl.png" alt="Shovel Owl" />
 		<Header>AthenaHacks 2025 Hacker Application</Header>
 	</div>
+
+	<p>
+		<small
+			>Thank you for your interest in AthenaHacks, Southern California's premier collegiate
+			hackathon for marginalized genders, hosted annually at the University of Southern California
+			(USC)!
+			<br /><br />
+			Our event will be held in-person at USC on March 1-2, 2025. Please note there will not be a virtual
+			or hybrid option this year.
+			<br /><br />
+			We will be accepting applications on a rolling basis, so keep an eye out for an email from us once
+			you apply!</small
+		>
+	</p>
 
 	<div class="form_question">
 		<label for="email">
@@ -591,145 +606,3 @@
 	<button type="submit" id="submit">Submit</button>
 	<p class="errorBox" bind:this={errorBox}></p>
 </form>
-
-<style lang="scss">
-	.header {
-		display: grid;
-		grid-template-columns: 1fr 4fr;
-		align-items: center;
-		justify-items: center;
-		gap: 2em;
-
-		@include respond-to('small') {
-			grid-template-columns: 1fr;
-		}
-
-		img {
-			width: 200px;
-			height: 200px;
-		}
-	}
-
-	form {
-		box-sizing: border-box;
-		display: flex;
-		flex-flow: column;
-		flex: 1;
-		gap: 1em;
-		margin: 3em auto;
-		width: 50%;
-
-		@include respond-to('medium') {
-			width: 70%;
-		}
-
-		@include respond-to('small') {
-			width: 80%;
-		}
-	}
-
-	.form_question {
-		background-color: white;
-		padding: 1.5em;
-		border: 2px solid $dark-blue;
-		border-radius: 0.75em 0.75em 0 0.75em;
-	}
-
-	.form_question {
-		&.radio,
-		&.checkbox {
-			display: grid;
-			grid-template-columns: 1;
-		}
-	}
-
-	input[type='text'],
-	input[type='email'],
-	input[type='tel'],
-	input[type='date'],
-	input[type='number'],
-	select,
-	textarea {
-		border: 2px solid lightgray;
-		border-top: none;
-		border-right: none;
-		border-left: none;
-		background-color: white;
-		outline: none;
-
-		&:focus {
-			border-color: $green;
-		}
-	}
-
-	input[type='text'],
-	input[type='email'],
-	input[type='number'],
-	input[type='tel'] {
-		width: 50%;
-
-		@include respond-to('small') {
-			width: 80%;
-		}
-	}
-
-	textarea {
-		width: 80%;
-		height: 1em;
-		resize: none;
-		overflow: hidden;
-	}
-
-	input[type='checkbox'],
-	input[type='radio'] {
-		accent-color: $dark-green;
-	}
-
-	p {
-		margin: 0 0 0.75em 0;
-		color: black;
-	}
-
-	small {
-		color: gray;
-		display: block;
-		margin-top: 0.75em;
-	}
-
-	em.required {
-		font-style: normal;
-		color: red;
-	}
-
-	label {
-		vertical-align: middle;
-		span {
-			font-size: 0.8em;
-		}
-
-		&:has(span) {
-			display: flex;
-			align-items: start;
-			gap: 0.2em;
-			margin-bottom: 0.3em;
-		}
-	}
-
-	#submit {
-		margin: 1em auto;
-		padding: 0.5em 2em;
-		background-color: $earth-green;
-		color: $brown;
-		border: $brown 2px solid;
-		border-radius: 0.75em 0.75em 0em 0.75em;
-		filter: drop-shadow(0.25em 0.25em 0 $brown);
-		width: 50%;
-		font-size: 1.25rem;
-		font-family: 'Lilita One', sans-serif;
-
-		&:hover {
-			cursor: pointer;
-			transform: rotate(2deg);
-		}
-	}
-</style>
