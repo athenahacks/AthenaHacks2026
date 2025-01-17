@@ -174,14 +174,14 @@
 
 	<div class="form_question">
 		<label for="majors">
-			<p>Major(s) <em class="required">*</em></p>
+			<p>Major(s) of Study <em class="required">*</em></p>
 			<input name="majors" id="majors" type="text" required />
 		</label>
 	</div>
 
 	<div class="form_question">
 		<label for="minors">
-			<p>Minor(s)</p>
+			<p>Minor(s) of Study</p>
 			<input name="minors" id="minors" type="text" />
 		</label>
 	</div>
@@ -371,7 +371,7 @@
 		<label for="why_athenahacks_essay">
 			<p>
 				Why do you want to attend AthenaHacks? <em class="required">*</em><br /><small
-					>We just want to get to know you! 150 word limit.</small
+					>150 word limit.</small
 				>
 			</p>
 			<textarea
