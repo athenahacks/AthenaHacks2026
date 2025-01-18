@@ -67,10 +67,10 @@
 			padding-top: 8em;
 		}
 
-		// Blue background
+		// green fence background
 		&::before {
 			content: '';
-			background-image: url('images/footer.png');
+			background-image: url('/images/footer.png');
 			position: absolute;
 			inset: 3px 0 0 0;
 			z-index: -1;
