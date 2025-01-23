@@ -4,7 +4,8 @@
 		onInputTextArea,
 		onKeyupTextArea,
 		handleSubmit,
-		verifyPositiveAndWholeNumber
+		verifyPositiveAndWholeNumber,
+		SUCCESS_MESSAGE
 	} from '$lib/apply-util';
 	import '$lib/scss/_globals.scss';
 	import '$lib/scss/apply-common.scss';
@@ -24,7 +25,7 @@
 		const formMessage = result.formMessage ? result.formMessage : '';
 
 		if (formSuccess) {
-			errorBox.textContent = "Thanks for applying! You'll hear back from us soon :)";
+			errorBox.textContent = SUCCESS_MESSAGE;
 			errorBox.style.color = 'black';
 		} else {
 			errorBox.textContent = formMessage;

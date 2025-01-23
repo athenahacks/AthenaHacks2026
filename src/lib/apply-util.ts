@@ -1,4 +1,6 @@
-import { PUBLIC_GOOGLE_SHEETS_URL, PUBLIC_EMAIL } from '$env/static/public';
+import { PUBLIC_HACKER_APP_URL, PUBLIC_EMAIL } from '$env/static/public';
+
+export const SUCCESS_MESSAGE = "Thanks for applying! You'll hear back from us soon :)";
 
 function checkTextAreaWordLength(textarea: HTMLTextAreaElement) {
 	if (textarea.value == null) {
@@ -114,7 +116,7 @@ export async function handleSubmit(
 	form.reset();
 
 	// Send form information to backend.
-	const response = await fetch(PUBLIC_GOOGLE_SHEETS_URL, {
+	const response = await fetch(PUBLIC_HACKER_APP_URL, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'text/plain'
