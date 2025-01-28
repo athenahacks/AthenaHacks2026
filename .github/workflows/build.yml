@@ -18,11 +18,11 @@ jobs:
           npm install
           npm run build
         env:
-          PUBLIC_GOOGLE_SHEETS_URL: ${{ secrets.PUBLIC_GOOGLE_SHEETS_URL }}
+          PUBLIC_HACKER_APP_URL: ${{ secrets.PUBLIC_HACKER_APP_URL }}
           PUBLIC_EMAIL: ${{ secrets.PUBLIC_EMAIL }}
 
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: build
           
@@ -41,4 +41,4 @@ jobs:
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v2
+      uses: actions/deploy-pages@v4
