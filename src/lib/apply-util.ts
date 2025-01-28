@@ -1,4 +1,9 @@
-import { PUBLIC_HACKER_APP_URL, PUBLIC_EMAIL } from '$env/static/public';
+import {
+	PUBLIC_HACKER_APP_URL,
+	PUBLIC_MENTOR_APP_URL,
+	PUBLIC_VOLUNTEER_APP_URL,
+	PUBLIC_EMAIL
+} from '$env/static/public';
 
 export const SUCCESS_MESSAGE = "Thanks for applying! You'll hear back from us soon :)";
 
@@ -8,7 +13,7 @@ function checkTextAreaWordLength(textarea: HTMLTextAreaElement) {
 	}
 	const words = textarea.value.trim().split(/\s+/);
 	if (words.length > 150) {
-		textarea.value = words.slice(0, 150).join(" ");
+		textarea.value = words.slice(0, 150).join(' ');
 	}
 }
 
@@ -20,7 +25,8 @@ function updateTextAreaHeight(textarea: HTMLTextAreaElement) {
 export enum ApplicationType {
 	Hacker,
 	Mentor,
-	Volunteer
+	Volunteer,
+	Unknown
 }
 
 export function onKeyupTextArea(e: Event) {
@@ -36,55 +42,68 @@ export function onInputTextArea(e: Event) {
 }
 
 export function verifyPositiveAndWholeNumber(e: KeyboardEvent) {
-	const validKeypress = e.key == 'Backspace' || e.key == 'Enter' || e.key == 'Delete' || !Number.isNaN(Number(e.key));
+	const validKeypress =
+		e.key == 'Backspace' || e.key == 'Enter' || e.key == 'Delete' || !Number.isNaN(Number(e.key));
 	if (!validKeypress) {
 		e.preventDefault();
 	}
 }
 
-function validateHackerApplication(form: HTMLFormElement) {
+function validateRequiredCheckboxes(
+	form: HTMLFormElement,
+	requiredCheckboxQuestionNames: string[]
+) {
 	// Ensure that for required questions, at least one checkbox is checked.
 	const checkboxQuestions = form.getElementsByClassName('checkbox');
-	for (let i = 0; i < checkboxQuestions.length; ++i) {
+
+	for (let i = 0; i < requiredCheckboxQuestionNames.length; ++i) {
 		const question = checkboxQuestions.item(i);
-		if (question != null) {
-			if (question.querySelectorAll('input[type=checkbox]:checked').length == 0) {
-				let questionName: string = '';
-				switch (i) {
-					case 0:
-						questionName = 'gender';
-						break;
-					case 1:
-						questionName = 'preferred pronouns';
-						break;
-					case 2:
-						questionName = 'ethnicity';
-						break;
-					case 3:
-						questionName = "'How did you hear about us'";
-						break;
-				}
+		if (question != null && question.querySelectorAll('input[type=checkbox]:checked').length == 0) {
+			const questionName = requiredCheckboxQuestionNames[i];
+			(question as HTMLDivElement).style.borderColor = 'red';
 
-				(question as HTMLDivElement).style.borderColor = 'red';
-
-				return {
-					validated: false,
-					message: `You have not filled out the ${questionName} question. Please answer the question and resubmit!`
-				};
-			}
+			return {
+				validated: false,
+				message: `You have not filled out the ${questionName} question. Please answer the question and resubmit!`
+			};
 		}
 	}
+
 	return { validated: true };
 }
 
 function validateForm(form: HTMLFormElement, formType: ApplicationType) {
 	switch (formType) {
 		case ApplicationType.Hacker:
-			return validateHackerApplication(form);
 		case ApplicationType.Mentor:
+			return validateRequiredCheckboxes(form, [
+				'gender',
+				'preferred pronouns',
+				'ethnicity',
+				"'How did you hear about us'"
+			]);
+
 		case ApplicationType.Volunteer:
+			return validateRequiredCheckboxes(form, [
+				'gender',
+				'preferred pronouns',
+				"'How did you hear about us'"
+			]);
 	}
 	return { validated: false, message: 'Illegal' };
+}
+
+function formTypeToURL(formType: ApplicationType) {
+	switch (formType) {
+		case ApplicationType.Hacker:
+			return PUBLIC_HACKER_APP_URL;
+		case ApplicationType.Mentor:
+			return PUBLIC_MENTOR_APP_URL;
+		case ApplicationType.Volunteer:
+			return PUBLIC_VOLUNTEER_APP_URL;
+	}
+
+	return '';
 }
 
 export async function handleSubmit(
@@ -105,18 +124,19 @@ export async function handleSubmit(
 	const formJSON = Object.fromEntries(
 		Array.from(data.keys(), (key) => {
 			const val = data.getAll(key);
+
+			// Ensure that the value is always a string and not null or something similar.
 			if (val.length == 0) {
-				return [key, ""];
+				return [key, ''];
 			}
-			
+
 			return [key, JSON.stringify(val).replace('[', '').replaceAll('"', '').replaceAll(']', '')];
 		})
 	);
-	// console.log(formJSON);
 	form.reset();
 
 	// Send form information to backend.
-	const response = await fetch(PUBLIC_HACKER_APP_URL, {
+	const response = await fetch(formTypeToURL(formType), {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'text/plain'

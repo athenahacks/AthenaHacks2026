@@ -10,7 +10,6 @@
 	</div>
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
-		 <!-- TODO: Add application links -->
 		  <!-- <Button
 			tilt="left"
 			backgroundColor="lime"
@@ -26,18 +25,18 @@
 			href="apply-hacker"
 			target="_blank">2025 Hacker Application</Button
 		>
-		<!-- <Button
+		<Button
 			tilt="right"
 			backgroundColor="pink"
-			href="TODO"
+			href="apply-mentor"
 			target="_blank">2025 Mentor Application</Button
 		>
 		<Button
 			tilt="left"
 			backgroundColor="dark-pink"
-			href="TODO"
+			href="apply-volunteer"
 			target="_blank">2025 Volunteer Application</Button
-		>  -->
+		> 
 		<!-- [END] application links -->
 
 		<Socials />
