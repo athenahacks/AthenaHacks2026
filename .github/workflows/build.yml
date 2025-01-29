@@ -20,7 +20,6 @@ jobs:
         env:
           PUBLIC_HACKER_APP_URL: ${{ secrets.PUBLIC_HACKER_APP_URL }}
           PUBLIC_MENTOR_APP_URL: ${{ secrets.PUBLIC_MENTOR_APP_URL }}
-          PUBLIC_VOLUNTEER_APP_URL: ${{ secrets.PUBLIC_VOLUNTEER_APP_URL }}
           PUBLIC_EMAIL: ${{ secrets.PUBLIC_EMAIL }}
 
       - name: Upload artifacts

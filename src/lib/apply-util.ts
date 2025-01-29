@@ -1,7 +1,6 @@
 import {
 	PUBLIC_HACKER_APP_URL,
 	PUBLIC_MENTOR_APP_URL,
-	PUBLIC_VOLUNTEER_APP_URL,
 	PUBLIC_EMAIL
 } from '$env/static/public';
 
@@ -100,7 +99,7 @@ function formTypeToURL(formType: ApplicationType) {
 		case ApplicationType.Mentor:
 			return PUBLIC_MENTOR_APP_URL;
 		case ApplicationType.Volunteer:
-			return PUBLIC_VOLUNTEER_APP_URL;
+			return '';
 	}
 
 	return '';

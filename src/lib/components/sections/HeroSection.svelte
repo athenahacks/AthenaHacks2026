@@ -31,12 +31,12 @@
 			href="apply-mentor"
 			target="_blank">2025 Mentor Application</Button
 		>
-		<Button
+		<!-- <Button
 			tilt="left"
 			backgroundColor="dark-pink"
 			href="apply-volunteer"
 			target="_blank">2025 Volunteer Application</Button
-		> 
+		>  -->
 		<!-- [END] application links -->
 
 		<Socials />
