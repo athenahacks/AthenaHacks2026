@@ -1,10 +1,9 @@
 <script lang="ts">
 	import {
+		submitFormAndDisplayResult,
 		ApplicationType,
 		onInputTextArea,
 		onKeyupTextArea,
-		handleSubmit,
-		SUCCESS_MESSAGE
 	} from '$lib/apply-util';
 	import '$lib/scss/_globals.scss';
 	import '$lib/scss/apply-common.scss';
@@ -19,17 +18,12 @@
 	let hearAboutUsOtherChecked: boolean;
 
 	async function handleSubmitWrapper(e: SubmitEvent) {
-		const result = await handleSubmit(e, form, ApplicationType.Mentor);
-		const formSuccess = result.formSuccess;
-		const formMessage = result.formMessage ? result.formMessage : '';
-
-		if (formSuccess) {
-			errorBox.textContent = SUCCESS_MESSAGE;
-			errorBox.style.color = 'black';
-		} else {
-			errorBox.textContent = formMessage;
-			errorBox.style.color = 'red';
-		}
+		submitFormAndDisplayResult(
+			form,
+			document.getElementById('submit') as HTMLButtonElement,
+			errorBox,
+			ApplicationType.Mentor
+		);
 	}
 </script>
 

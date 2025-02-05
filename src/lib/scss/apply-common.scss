@@ -137,4 +137,9 @@ label {
         cursor: pointer;
         transform: rotate(2deg);
     }
+
+    &:disabled {
+        color: gray;
+        background-color: lightgray;
+    }
 }

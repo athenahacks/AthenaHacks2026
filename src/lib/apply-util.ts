@@ -1,10 +1,6 @@
-import {
-	PUBLIC_HACKER_APP_URL,
-	PUBLIC_MENTOR_APP_URL,
-	PUBLIC_EMAIL
-} from '$env/static/public';
+import { PUBLIC_HACKER_APP_URL, PUBLIC_MENTOR_APP_URL, PUBLIC_EMAIL } from '$env/static/public';
 
-export const SUCCESS_MESSAGE = "Thanks for applying! You'll hear back from us soon :)";
+const SUCCESS_MESSAGE = "Thanks for applying! You'll hear back from us soon :)";
 
 function checkTextAreaWordLength(textarea: HTMLTextAreaElement) {
 	if (textarea.value == null) {
@@ -45,6 +41,31 @@ export function verifyPositiveAndWholeNumber(e: KeyboardEvent) {
 		e.key == 'Backspace' || e.key == 'Enter' || e.key == 'Delete' || !Number.isNaN(Number(e.key));
 	if (!validKeypress) {
 		e.preventDefault();
+	}
+}
+
+export async function submitFormAndDisplayResult(
+	form: HTMLFormElement,
+	submitButton: HTMLButtonElement,
+	errorBox: HTMLParagraphElement,
+	formType: ApplicationType
+) {
+	submitButton.disabled = true;
+	submitButton.textContent = 'Please wait...';
+
+	const result = await handleSubmit(form, formType);
+	const formSuccess = result.formSuccess;
+	const formMessage = result.formMessage ? result.formMessage : '';
+
+	if (formSuccess) {
+		submitButton.textContent = 'Submitted';
+		errorBox.textContent = SUCCESS_MESSAGE;
+		errorBox.style.color = 'black';
+	} else {
+		submitButton.disabled = false;
+		submitButton.textContent = 'Submit';
+		errorBox.textContent = formMessage;
+		errorBox.style.color = 'red';
 	}
 }
 
@@ -105,8 +126,7 @@ function formTypeToURL(formType: ApplicationType) {
 	return '';
 }
 
-export async function handleSubmit(
-	e: SubmitEvent,
+async function handleSubmit(
 	form: HTMLFormElement,
 	formType: ApplicationType
 ) {
@@ -150,6 +170,7 @@ export async function handleSubmit(
 			formMessage: `Failed to submit application. Please email ${PUBLIC_EMAIL} for assistance.`
 		};
 	}
+
 	return {
 		formSuccess: true
 	};
