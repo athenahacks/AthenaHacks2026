@@ -16,10 +16,15 @@
 				alt="Bloomberg Engineering"
 			/> -->
 			<!-- <img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" /> -->
-		<!-- </div>
+		<!----</div> -->
 		<div class="section tier-2">
 			<img class="snail" src="/images/snail-brown.png" alt="snail decoration" />
-		</div> -->
+			<img
+				class="sponsor"
+				src="/images/sponsors/bloomberg-engineering.png"
+				alt="Bloomberg Engineering"
+			/>
+		</div> 
 		<div class="section tier-3">
 			<img class="snail" src="/images/snail-green.png" alt="snail decoration" />
 
@@ -58,6 +63,7 @@
 
 			img {
 				object-fit: contain;
+				height: 70%;
 			}
 		}
 
@@ -90,13 +96,13 @@
 		// 	}
 		// }
 
-		// .tier-2 {
-		// 	width: 30%;
-		// 	background-color: $beige;
-		// 	.sponsor {
-		// 		max-height: 110px;
-		// 	}
-		// }
+		.tier-2 {
+			width: 30%;
+			background-color: $beige;
+			.sponsor {
+				max-height: 110px;
+			}
+		}
 
 		.tier-3 {
 			width: 30%;
