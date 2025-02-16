@@ -11,18 +11,16 @@
 			</div>
 		</div>
 		<div class="description">
-			<h3>Janine Lee</h3>
-			<h4>Global Head of Learning & Development at Google</h4>
+			<h3>Katya Sutil</h3>
+			<h4>Sr. Manager of Falcon 9 Subassemblies Production at SpaceX</h4>
 			<p>
-				Dr. Janine Lee is a Global Head of Learning & Development (L&D) at Google, and a Diversity
-				Equity Inclusion and Belonging (DEIB) Leader. As a USC Doctorate of Education (Ed.D)
-				graduate, Janine authored her dissertation research on workplace sense of belonging for
-				women of color in technology. Janine has won dozens of internationally acclaimed awards
-				including the Maybelline Empowerment through Education Award featured in People magazine.
-				She is a keynote speaker, 100+ country world traveler, and co-author of the upcoming book
-				‘Unstoppable: The Rise of Female Global Leaders’ releasing this Spring 2024. Her life vision
-				is to “Create a world where everyone belongs” and her mission is to “Inspire others to reach
-				their full potential.”
+				Katya is the Sr. Manager of Falcon 9 Subassemblies Production at SpaceX, 
+				where she leads the department responsible for building and testing propulsion 
+				systems, structural components, and mechanisms for the F9 rocket. With a background
+				 in Industrial Engineering, Katya has also led the build out of several new product 
+				 production areas across SpaceX. Katya holds a Bachelors and Masters degree 
+				 from USC Viterbi, and is excited to share insights on building a career in the emerging
+				  technologies industry.
 			</p>
 		</div>
 	</div>
@@ -54,7 +52,7 @@
 			h3 {
 				font-family: 'Lilita One', sans-serif;
 				font-weight: 400;
-				color: $purple;
+				color: $brown;
 				font-size: 2.3rem;
 				margin-bottom: 0.5em;
 				margin-top: 0;

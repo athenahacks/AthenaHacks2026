@@ -5,7 +5,7 @@
 	import HeroSection from '$lib/components/sections/HeroSection.svelte';
 	import About from '$lib/components/sections/About.svelte';
 	import Slideshow from '$lib/components/sections/Slideshow.svelte';
-	// import Keynote from '$lib/components/sections/Keynote.svelte';
+	import Keynote from '$lib/components/sections/Keynote.svelte';
 	import Faqs from '$lib/components/sections/Faqs.svelte';
 	import Sponsors from '$lib/components/sections/Sponsors.svelte';
 	import Team from '$lib/components/sections/Team.svelte';
@@ -36,7 +36,7 @@
 <Faqs />
 <!-- <MemoryLane /> -->
 <Sponsors />
-<!-- <Keynote /> -->
+<Keynote />
 <Team />
 <Footer />
 
