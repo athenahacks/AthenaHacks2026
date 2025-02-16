@@ -90,7 +90,7 @@
 	.left-branch {
 		width: 45%;
 		margin-bottom: -240px;
-		margin-top: 50px;
+		margin-top: 30px;
 
 		@include respond-to('medium') {
 			width: 40%;
