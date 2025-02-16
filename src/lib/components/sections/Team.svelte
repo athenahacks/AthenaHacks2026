@@ -98,6 +98,7 @@
 
 		@include respond-to('small') {
 			width: 35%;
+			margin-top: 60px;
 		}
 	}
 
@@ -108,10 +109,12 @@
 
 		@include respond-to('medium') {
 			width: 45%;
+			margin-top: 60px;
 		}
 
 		@include respond-to('small') {
 			width: 40%;
+			margin-top: 60px;
 		}
 	}
 
