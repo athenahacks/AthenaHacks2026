@@ -111,7 +111,7 @@
 
 		@include respond-to('small') {
 			.background {
-				padding-top: 220%;
+				padding-top: 200%;
 			}
 
 			.leaf {
