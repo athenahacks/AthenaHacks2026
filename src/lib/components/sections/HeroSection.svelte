@@ -6,7 +6,7 @@
 <section>
 	<div class="background"></div>
 	<div class="leaf">
-		<img src="/images/hero-section-leaf.png" alt="AthenaHacks leaf. March 8-9" />
+		<img src="/images/hero-section-leaf.png" alt="AthenaHacks leaf. March 1-2" />
 	</div>
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
@@ -19,7 +19,7 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
-		<Button
+		<!-- <Button
 			tilt="left"
 			backgroundColor="light-pink"
 			href="apply-hacker"
@@ -30,7 +30,7 @@
 			backgroundColor="pink"
 			href="apply-mentor"
 			target="_blank">2025 Mentor Application</Button
-		>
+		> -->
 		<!-- <Button
 			tilt="left"
 			backgroundColor="dark-pink"
