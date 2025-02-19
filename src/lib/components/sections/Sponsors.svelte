@@ -15,7 +15,6 @@
 				src="/images/sponsors/bloomberg-engineering.png"
 				alt="Bloomberg Engineering"
 			/> -->
-			<!-- <img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" /> -->
 		<!----</div> -->
 		<div class="section tier-2">
 			<img class="snail" src="/images/snail-brown.png" alt="snail decoration" />
@@ -24,6 +23,7 @@
 				src="/images/sponsors/bloomberg-engineering.png"
 				alt="Bloomberg Engineering"
 			/>
+			<img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" />
 		</div> 
 		<div class="section tier-3">
 			<img class="snail" src="/images/snail-green.png" alt="snail decoration" />
@@ -97,7 +97,7 @@
 		// }
 
 		.tier-2 {
-			width: 30%;
+			width: 50%;
 			background-color: $beige;
 			.sponsor {
 				max-height: 110px;

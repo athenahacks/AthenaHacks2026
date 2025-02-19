@@ -24,6 +24,7 @@
 		</div>
 		<div class="previous-sites">
 			<h3>Previous Sites</h3>
+			<a href="https://athenahacks.github.io/AthenaHacks2024/" target="_blank">AthenaHacks 2024</a>
 			<a href="https://athenahacks.github.io/AthenaHacks2023/" target="_blank">AthenaHacks 2023</a>
 			<a href="https://athenahacks.github.io/AthenaHacks2022/" target="_blank">AthenaHacks 2022</a>
 			<a href="https://athenahacks.github.io/AthenaHacks2021/" target="_blank">AthenaHacks 2021</a>
