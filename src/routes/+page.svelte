@@ -10,7 +10,7 @@
 	import Sponsors from '$lib/components/sections/Sponsors.svelte';
 	import Team from '$lib/components/sections/Team.svelte';
 	import MobileNavbar from '$lib/components/NavbarMobile.svelte';
-	// import Schedule from '$lib/components/sections/Schedule.svelte';
+	import Schedule from '$lib/components/sections/Schedule.svelte';
 	import MemoryLane from '$lib/components/sections/MemoryLane.svelte';
 </script>
 
@@ -31,7 +31,7 @@
 <About />
 <img class="divider1" src="images/divider1.png" alt="Divider1" />
 <Slideshow />
-<!-- <Schedule /> -->
+<Schedule />
 <img class="divider2" src="images/divider2.png" alt="Divider2" />
 <Faqs />
 <!-- <MemoryLane /> -->
