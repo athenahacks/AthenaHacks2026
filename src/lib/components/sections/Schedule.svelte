@@ -6,8 +6,8 @@
 	<Header>Schedule</Header>
     <p>Take a look at the schedule for the hackathon this weekend! Get excited for the workshops, socials, and food!</p>
 	<div class="schedule">
-		<div><img src="images/schedule1.png" alt="Saturday schedule" /></div>
-		<div><img src="images/schedule2.png" alt="Sunday schedule" /></div>
+		<div><img src="images/schedule1.jpg" alt="Saturday schedule" /></div>
+		<div><img src="images/schedule2.jpg" alt="Sunday schedule" /></div>
 	</div>
 </section>
 
