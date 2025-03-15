@@ -15,11 +15,11 @@
 	/** Info from data/team.yml.*/
 	const teamData: { [key: string]: any } = data;
 
-	/** 
+	/**
 	 * Given a folder location, iterate and retrieve all images.
 	 *   - Parse images for src string.
 	 *   - Parse filename for organizer's first/last name.
-	 *   - Look up organizer in teamData to get any additional data.  
+	 *   - Look up organizer in teamData to get any additional data.
 	 */
 	async function loadProfilePhotosFromModule(module: any) {
 		const iterableModule = Object.entries(module);
@@ -34,7 +34,7 @@
 						.replace(/\w\S*/g, function (txt: string) {
 							return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
 						});
-						
+
 					// Join image data with any additional teamData.
 					return {
 						name: name,
@@ -58,15 +58,17 @@
 	<div class="team-gallery">
 		<!-- Iterate through each folder containing images from each team. -->
 		{#each [...modules] as [team, module]}
-		<!-- <h2>{team}</h2>  -->
+			<!-- <h2>{team}</h2>  -->
 			{#await loadProfilePhotosFromModule(module) then images}
 				{#each images as { name, data, src }}
 					<div class="profile-item">
 						<figure>
 							<div class="img-wrapper">
 								{#if data?.linkedin}
-									<span class="link-icon"><Fa icon={faLinkedin}></Fa></span>
-									<a href={data.linkedin} target="_blank"><img {src} alt={name} /></a>
+									<a href={data.linkedin} target="_blank">
+										<span class="link-icon"><Fa icon={faLinkedin}></Fa></span>
+										<img {src} alt={name} /></a
+									>
 								{:else}
 									<img {src} alt={name} />
 								{/if}
@@ -139,7 +141,6 @@
 				display: block;
 				position: relative;
 				transition: all 0.4s ease-out;
-
 				.link-icon {
 					position: absolute;
 					color: white;
@@ -157,6 +158,7 @@
 					border: 3px $brown solid;
 					width: 200px;
 					backface-visibility: hidden;
+					pointer-events: none;
 				}
 
 				&:hover {
