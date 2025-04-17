@@ -19,9 +19,9 @@ jobs:
           npm run build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
-          PUBLIC_HACKER_APP_URL: ${{ secrets.PUBLIC_HACKER_APP_URL }}
-          PUBLIC_MENTOR_APP_URL: ${{ secrets.PUBLIC_MENTOR_APP_URL }}
-          PUBLIC_EMAIL: ${{ secrets.PUBLIC_EMAIL }}
+        #   PUBLIC_HACKER_APP_URL: ${{ secrets.PUBLIC_HACKER_APP_URL }}
+        #   PUBLIC_MENTOR_APP_URL: ${{ secrets.PUBLIC_MENTOR_APP_URL }}
+        #   PUBLIC_EMAIL: ${{ secrets.PUBLIC_EMAIL }}
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
