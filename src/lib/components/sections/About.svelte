@@ -32,9 +32,17 @@
 				><img src="/images/press/medium.png" alt="Medium" /></a
 			>
 		</div>
+		<p class="disclaimer">
+			USC programs and events are open to all eligible individuals. The University of Southern
+			California operates all of its programs and activities consistent with its
+			<a href="https://eeotix.usc.edu/usc-statement-on-eligibility/" target="_blank">
+				Notice of Non-Discrimination
+			</a>. Eligibility is not determined based on race, sex, ethnicity, sexual orientation, or any
+			other prohibited factor.
+		</p>
 	</div>
 	<div class="image">
-		<img class= "owl" src="/images/about.png" alt="watering can owl" />
+		<img class="owl" src="/images/about.png" alt="watering can owl" />
 	</div>
 </section>
 
@@ -81,6 +89,15 @@
 				width: 85%; /* Scale image responsively */
 				animation: infiniteFloating 3s ease-in-out infinite; /* Apply floating animation */
 			}
+		}
+
+		.disclaimer {
+			font-size: 14px;
+			font-style: italic;
+		}
+
+		.disclaimer > p {
+			color: light-brown;
 		}
 
 		@include respond-to('medium') {
