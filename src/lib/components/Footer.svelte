@@ -82,10 +82,6 @@
 		.logos {
 			display: flex;
 			flex-direction: column;
-
-			.viterbi-logo {
-				mix-blend-mode: darken;
-			}
 		}
 
 		.previous-sites {
