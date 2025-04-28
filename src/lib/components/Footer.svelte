@@ -14,13 +14,6 @@
 			<a href="https://athenahacks.com/" target="_blank"
 				><img src={athenaLogo} alt="AthenaHacks logo" /></a
 			>
-			<a href="https://viterbischool.usc.edu/" target="_blank"
-				><img
-					src={viterbiLogo}
-					class="viterbi-logo"
-					alt="USC Viterbi School of Engineering logo"
-				/></a
-			>
 		</div>
 		<div class="previous-sites">
 			<h3>Previous Sites</h3>
