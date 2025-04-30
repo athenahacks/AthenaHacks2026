@@ -20,11 +20,6 @@
 				href="https://www.huffpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_b_58ebf5fae4b0145a227cb797"
 				target="_blank"><img src="/images/press/huffpost.svg" alt="Huffpost" /></a
 			>
-			<a
-				href="https://viterbischool.usc.edu/news/2019/04/a-hackathon-for-women-by-women/"
-				target="_blank"
-				><img src="/images/press/usc_viterbi.svg" alt="USC Viterbi School of Engineering" /></a
-			>
 			<a href="https://dailytrojan.com/2020/03/08/women-in-tech-rising-above/" target="_blank"
 				><img src="/images/press/daily_trojan.png" alt="Daily Trojan" /></a
 			>
