@@ -220,7 +220,7 @@
 							content: '';
 							position: absolute;
 							height: 100%;
-							background-color: $dark-blue;
+							background-color: $pink;
 							outline: 3px solid $brown;
 							border-radius: 1em;
 							width: var(--activeWidth);

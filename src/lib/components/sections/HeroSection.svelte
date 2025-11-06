@@ -5,8 +5,8 @@
 
 <section>
 	<div class="background"></div>
-	<div class="leaf">
-		<img src="/images/hero-section-leaf.png" alt="AthenaHacks leaf. March 1-2" />
+	<div class="under_construction">
+		<img src="/images/owls_at_work.png" alt="AthenaHacks leaf. March 1-2" />
 	</div>
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
@@ -64,15 +64,15 @@
 			padding-top: 110%;
 		}
 
-		.leaf {
+		.under_construction {
 			position: absolute;
-			top: 12%;
+			top: -12%;
 			text-align: center;
 			pointer-events: none;
 
 			img {
 				width: 70%;
-				animation: infiniteFloating 3s ease-in-out infinite;
+				// animation: infiniteFloating 3s ease-in-out infinite;
 			}
 		}
 
@@ -101,8 +101,8 @@
 				padding-top: 130%;
 			}
 
-			.leaf {
-				top: 20%;
+			.under_construction {
+				top: -15%;
 				img {
 					width: 90%;
 				}
@@ -114,8 +114,8 @@
 				padding-top: 200%;
 			}
 
-			.leaf {
-				top: 15%;
+			.under_construction {
+				top: 0%;
 				img {
 					width: 90%;
 				}
