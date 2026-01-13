@@ -6,7 +6,7 @@
 <section>
 	<div class="background"></div>
 	<div class="under_construction">
-		<img src="/images/owls_at_work.png" alt="AthenaHacks leaf. March 1-2" />
+		<img src="/images/owls_at_work.png" alt="owl holding construction sign" />
 	</div>
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
@@ -46,6 +46,10 @@
 			<img src="/images/sponsors/tech-together.png" alt="TechTogether logo">
 		</div> -->
 	</div>
+
+	<div class="divider">
+		<img class="divider1" src="/images/assets/wave-border-lightblue.png" alt="wave border" /> 
+	</div>
 </section>
 
 <style lang="scss">
@@ -56,11 +60,11 @@
 		min-height: 100vh;
 
 		.background {
-			background-image: url('/images/hero-section-cover.png');
+			background-image: url('/images/assets/beach_background.png');
 			background-size: cover;
 			background-repeat: no-repeat;
 			width: 100%;
-			height: 0;
+			height: 70%;
 			padding-top: 110%;
 		}
 
@@ -74,6 +78,12 @@
 				width: 70%;
 				// animation: infiniteFloating 3s ease-in-out infinite;
 			}
+		}
+
+		.divider{
+			width: 100%;
+			position: absolute;
+			top: 92%;
 		}
 
 		.content {
@@ -107,6 +117,10 @@
 					width: 90%;
 				}
 			}
+			
+			.divider {
+				top: 92%;
+			}
 		}
 
 		@include respond-to('small') {
@@ -129,6 +143,10 @@
 				margin-right: auto;
 				width: 80%;
 				align-items: center;
+			}
+
+			.divider {
+				bottom: -10%;
 			}
 		}
 	}

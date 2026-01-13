@@ -162,7 +162,9 @@
 				}
 
 				&:hover {
-					transform: rotate(2deg);
+					img {
+						border: 3px solid white;
+					}
 
 					.link-icon {
 						margin-right: 0.5em;

@@ -96,7 +96,7 @@
 		}
 
 		@include respond-to('medium') {
-			margin-top: -4em;
+			margin-top: -2em;
 			flex-flow: column;
 
 			.image {

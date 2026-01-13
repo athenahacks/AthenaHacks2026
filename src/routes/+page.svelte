@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>AthenaHacks 2025</title>
+	<title>AthenaHacks 2026</title>
 </svelte:head>
 
 <div class="navbars">
@@ -28,15 +28,13 @@
 </div>
 
 <HeroSection />
+<!-- <img class="divider1" src="images/assets/wave-border-lightblue.png" alt="wave border" /> -->
 <About />
-<img class="divider1" src="images/divider1.png" alt="Divider1" />
 <Slideshow />
-<Schedule />
 <img class="divider2" src="images/divider2.png" alt="Divider2" />
 <Faqs />
 <!-- <MemoryLane /> -->
 <Sponsors />
-<Keynote />
 <Team />
 <Footer />
 
@@ -55,9 +53,10 @@
 		}
 	}
 	.divider1 {
-		width: 45%;
-		padding-bottom: 10px;
+		width: 100%;
+		padding-bottom: -10px;
 
+		/* 
 		@include respond-to('medium') {
 			width: 40%;
 		}
@@ -65,6 +64,7 @@
 		@include respond-to('small') {
 			width: 35%;
 		}
+		*/
 	}
 
 	.divider2 {

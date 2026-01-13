@@ -27,7 +27,7 @@
 	details {
 		outline: 2px solid $brown;
 		border-radius: 0.75em 0.75em 0em 0.75em;
-		background-color: $lime;
+		background-color: $orange;
 		overflow: hidden;
 		color: $brown;
 
@@ -63,7 +63,7 @@
 		}
 
 		&[open] {
-			background-color: pink;
+			background-color: $yellow;
 			+ .content {
 				max-height: 800px; /* Set a max-height value enough to show all the content */
 				outline: 2px solid $brown;

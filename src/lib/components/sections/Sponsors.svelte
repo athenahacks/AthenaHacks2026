@@ -36,7 +36,7 @@
 	<div class="thank-you-message">
 		<p>
 			A huge thank you to all our sponsors and contributors! If you're interested in sponsoring
-			AthenaHacks 2025, please contact us at <a href="mailto:athenahacks@gmail.com"
+			AthenaHacks 2026, please contact us at <a href="mailto:athenahacks@gmail.com"
 				>athenahacks@gmail.com</a
 			>
 		</p>

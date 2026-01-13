@@ -6,7 +6,7 @@
 		{
 			image: '/images/slides/slide0.png',
 			description:
-				"From hardware to mobile, there are so many fields to explore! We want women to explore their ideas and interests, and are looking forward to some amazing projects! Check out last year's projects <a href='https://athenahacks2023.devpost.com/project-gallery' target='_blank'>here</a>!"
+				"From hardware to mobile, there are so many fields to explore! We want women to explore their ideas and interests, and are looking forward to some amazing projects! Check out last year's projects <a href='https://athenahacks2025.devpost.com/project-gallery' target='_blank'>here</a>!"
 		},
 		{
 			image: '/images/slides/slide1.png',
