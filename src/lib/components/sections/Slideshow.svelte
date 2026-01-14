@@ -1,55 +1,55 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-
-	let currView = 0;
 	const slides = [
 		{
-			image: '/images/slides/slide0.png',
+			title: "Dream",
+			image: '/images/owls/CultivateOwl.png',
 			description:
 				"From hardware to mobile, there are so many fields to explore! We want women to explore their ideas and interests, and are looking forward to some amazing projects! Check out last year's projects <a href='https://athenahacks2025.devpost.com/project-gallery' target='_blank'>here</a>!"
 		},
 		{
-			image: '/images/slides/slide1.png',
+			title: "Cultivate",
+			image: '/images/owls/CultivateOwl.png',
 			description:
 				"We're all about helping each other grow! We hope to foster a supportive environment so that each participant at AthenaHacks feels welcome, comfortable and empowered."
 		},
 		{
-			image: '/images/slides/slide2.png',
+			title: "Belong",
+			image: '/images/owls/CultivateOwl.png',
 			description:
 				'Right now, only 20% of hackathon participants are women. We hope to fill that gap by providing a comfortable environment that is focused on learning and exploring!'
 		}
 	];
 
-	function setView(index: number) {
-		currView = index;
+	let selected: number | null = null;
+	let cardFlipped = false;
+
+	const toggleBackFront = (id : number) => {
+		if (selected === id) {
+			selected = null;
+			cardFlipped = !cardFlipped;
+		} else {
+			cardFlipped = !cardFlipped;
+			selected = id;
+		}
 	}
 </script>
 
 <section>
-	<div class="slideshow">
-		<div class="sidebar">
-			<h2 on:mouseover={() => setView(0)} on:focus={() => setView(0)} class:active={currView == 0}>
-				Dream
-			</h2>
-			<h2 on:mouseover={() => setView(1)} on:focus={() => setView(1)} class:active={currView == 1}>
-				Cultivate
-			</h2>
-			<h2 on:mouseover={() => setView(2)} on:focus={() => setView(2)} class:active={currView == 2}>
-				Belong
-			</h2>
-		</div>
-		{#key currView}
-			<div class="slide-wrapper" in:fade={{ duration: 400 }}>
-				<div class="slide">
-					<div class="slide-image">
-						<img src={slides[currView].image} alt={`Slide ${currView}`} />
+	<div class="row">
+		{#each slides as {title, image, description}, i}
+			<button class="card" on:click={() => toggleBackFront(i)}>
+				<div class="card-inner" class:flipped={selected === i}>
+					<div class="card-front">
+						<img src={image} alt={title}>
 					</div>
-					<div class="content">
-						<p>{@html slides[currView].description}</p>
+
+					<div class="card-back">
+						<h3>{title}</h3>
+						<p>{@html description}</p>
 					</div>
 				</div>
-			</div>
-		{/key}
+			</button>
+		{/each}
 	</div>
 </section>
 
@@ -58,119 +58,91 @@
 		margin-top: 0;
 	}
 	
-	.slideshow {
-		margin: auto;
-		width: 80%;
+	.row {
 		display: flex;
-		gap: 2em;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.card {
+		all: unset;
+		width: 25%;
+		height: 320px;
+		perspective: 1000px; 
+		cursor: pointer;
+	}
+
+	.card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.6s ease;
+		transform-style: preserve-3d;
+	}
+
+	.card-inner.flipped {
+		transform: rotateY(180deg);
+	}
+
+	.card-front,
+	.card-back {
+		position: absolute;
+		inset: 0;
+		backface-visibility: hidden;
+		border-radius: 0.9em;
+		background-color: $red;
+		padding: 2rem;
+
+		display: flex;
+		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+	}
 
-		.sidebar {
-			flex: 0.33;
-			display: flex;
-			flex-flow: column;
-			h2 {
-				font-family: 'Lilita One', sans-serif;
-				color: $text-brown;
-				margin: 0.25em 0;
-				font-size: 3.5rem;
-				font-weight: 400;
-				transition: all 300ms ease;
-				display: flex;
-				align-items: center;
+	.card-back {
+		transform: rotateY(180deg);
+		text-align: center;
+	}
 
-				&::before {
-					content: '🌸';
-					color: transparent;
-					margin-right: 0.5em;
-					font-size: 2.2rem;
-				}
+	.card-front img {
+		height: 10em;
+	}
 
-				&:hover {
-					cursor: pointer;
-				}
+	h3 {
+		color: white;
+	}
 
-				&.active {
-					color: $pink;
+	p {
+		color: white;
+		font-size: small;
+	}
 
-					&::before {
-						content: '🌸';
-						color: black;
-						margin-right: 0.5em;
-						font-size: 2.2rem;
-					}
-				}
-			}
+	@include respond-to('medium') {
+		.card-front img {
+			height: 8em;
 		}
 
-		.slide-wrapper {
-			flex: 0.66;
-			.slide {
-				display: flex;
-				gap: 4em;
-				flex-wrap: wrap;
-				align-items: center;
-
-				.slide-image {
-					flex: 1;
-					display: block;
-					height: 300px;
-					width: 300px;
-					text-align: center;
-					
-					img {
-						object-fit: contain;
-						border-radius: 1.5em;
-					}
-				}
-				.content {
-					flex: 1;
-				}
-			}
-		}
-
-		@include respond-to('large') {
-			width: 100%;
-			.slide {
-				flex-flow: column;
-			}
-		}
-
-		@include respond-to('medium') {
-			flex-flow: column;
-			.sidebar {
-				flex-flow: row;
-				gap: 2em;
-				h2 {
-					flex-flow: column;
-				}
-			}
-		}
-
-		@include respond-to('small') {
-			width: 80%;
-			.sidebar {
-				flex: 1;
-				flex-flow: column;
-				gap: 0;
-				h2 {
-					font-size: 3rem;
-					margin: 0;
-					flex-flow: row;
-				}
-			}
-			.slide-wrapper {
-				flex: 1;
-				.slide {
-					gap: 2em;
-					flex-direction: column-reverse;
-					.slide-image {
-						img {
-							height: 200px;
-						}
-					}
-				}
-			}
+		.card {
+			width: 40%;       
+			max-width: 22rem;  
 		}
 	}
+
+	@include respond-to('small') {
+		.row {
+			flex-wrap: wrap;
+		}
+
+		.card {
+			width: 100%;       
+			max-width: 15rem;  
+		}
+
+		.card-front img {
+			height: 8em;
+		}
+
+	}
+	
 </style>

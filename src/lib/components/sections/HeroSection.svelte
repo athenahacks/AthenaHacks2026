@@ -83,7 +83,7 @@
 		.divider{
 			width: 100%;
 			position: absolute;
-			top: 92%;
+			top: 95%;
 		}
 
 		.content {
