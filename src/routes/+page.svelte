@@ -28,10 +28,8 @@
 </div>
 
 <HeroSection />
-<!-- <img class="divider1" src="images/assets/wave-border-lightblue.png" alt="wave border" /> -->
 <About />
 <Slideshow />
-<img class="divider2" src="images/divider2.png" alt="Divider2" />
 <Faqs />
 <!-- <MemoryLane /> -->
 <Sponsors />

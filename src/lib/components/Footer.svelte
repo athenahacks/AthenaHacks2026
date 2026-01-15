@@ -24,10 +24,10 @@
 			</div>
 			<div class="applications">
 				<h3>Applications</h3>
-				<a href="https://airtable.com/appC2yvmYQ33jcGYT/shrNWwl77LcMu7f1G" target="_blank"
+				<a href="https://forms.gle/JoHK3SLS8kmuWGvk9" target="_blank"
 					>Hacker Applications</a
 				>
-				<a href="https://airtable.com/app1QQxZoUxfmKxLJ/shrWioweTVsOzvrhj" target="_blank"
+				<a href="https://forms.gle/oZsktvG8GLgyeskx5" target="_blank"
 					>Mentor Applications</a
 				>
 			</div>
@@ -57,11 +57,10 @@
 		position: relative;
 		width: 100%;
 
-		padding: 4em 2em;
+		padding: 4.5em 0em;
 		display: flex;
 		justify-content: space-evenly;
-		flex-wrap: wrap;
-		gap: 2em;
+		flex-wrap: nowrap;
 
 		font-size: clamp(0.85rem, 1.2vw, 1rem);
 
@@ -72,11 +71,6 @@
 		a {
 			font-weight: 400;
 			color: $text-gray;
-		}
-
-		.logos {
-			display: flex;
-			flex-direction: column;
 		}
 
 		.previous-sites {
@@ -94,6 +88,10 @@
 		.socials-wrapper {
 			align-self: center;
 		}
+
+		.socials-wrapper :global(svg) {
+			color: $text-gray;
+		}
 	}
 
 	@include respond-to('medium') {
@@ -102,17 +100,42 @@
 			min-height: 80vh;
 			width: 100%;
 		}
+
+		.footer-overlay {
+			.logos img {
+				max-width: 80%;
+			}
+		}
 	}
 
 	@include respond-to('small') {
 		.footer {
-			background-image: url('/images/assets/seafloor-long.png');
-			min-height: 80vh;
-			width: 100%;
+			background-image: url('/images/assets/seafloor-longlong.png');
+			min-height: 100vh;
+			max-width: 100%;
 		}
 
 		.footer-overlay {
-			margin: 10px;
+			flex-direction: column;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			.logos {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.previous-sites {
+				padding-top: 10px;
+			}
+
+			.applications {
+				padding-top: 10px;
+			}
+
+			.socials-wrapper {
+				padding-top: 10px;
+			}
 		}
 	}
 </style>

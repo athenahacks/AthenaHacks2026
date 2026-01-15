@@ -5,8 +5,8 @@
 
 <section>
 	<div class="background"></div>
-	<div class="under_construction">
-		<img src="/images/owls_at_work.png" alt="owl holding construction sign" />
+	<div class="surfboard">
+		<img src="/images/assets/surfboard.png" alt="AthenaHacks surfboard" />
 	</div>
 	<div class="content">
 		<!-- [BEGIN] Organizer application links -->
@@ -19,24 +19,18 @@
 		<!-- [END] Organizer application links -->
 
 		<!-- [BEGIN] Hackathon application links -->
-		<!-- <Button
+		<Button
 			tilt="left"
-			backgroundColor="light-pink"
-			href="apply-hacker"
+			backgroundColor="light-blue"
+			href="https://forms.gle/JoHK3SLS8kmuWGvk9"
 			target="_blank">2025 Hacker Application</Button
 		>
 		<Button
 			tilt="right"
-			backgroundColor="pink"
-			href="apply-mentor"
+			backgroundColor="teal"
+			href="https://forms.gle/oZsktvG8GLgyeskx5"
 			target="_blank">2025 Mentor Application</Button
-		> -->
-		<!-- <Button
-			tilt="left"
-			backgroundColor="dark-pink"
-			href="apply-volunteer"
-			target="_blank">2025 Volunteer Application</Button
-		>  -->
+		>
 		<!-- [END] application links -->
 
 		<Socials />
@@ -60,23 +54,24 @@
 		min-height: 100vh;
 
 		.background {
-			background-image: url('/images/assets/beach_background.png');
+			background-image: url('/images/assets/beach-background.png');
 			background-size: cover;
 			background-repeat: no-repeat;
-			width: 100%;
+			max-width: 100%;
 			height: 70%;
 			padding-top: 110%;
 		}
 
-		.under_construction {
+		.surfboard {
 			position: absolute;
-			top: -12%;
+			top: 10%;
 			text-align: center;
 			pointer-events: none;
 
 			img {
-				width: 70%;
-				// animation: infiniteFloating 3s ease-in-out infinite;
+				width: 80%;
+				animation: infiniteFloating 5s ease-in-out infinite;
+				transform-origin: center;
 			}
 		}
 
@@ -91,7 +86,7 @@
 			flex-direction: column;
 			column-gap: 1em;
 			align-items: flex-end;
-			top: 53%;
+			top: 60%;
 			left: 60%;
 			position: absolute;
 
@@ -152,16 +147,12 @@
 	}
 
 	@keyframes infiniteFloating {
-		0% {
-			transform: scale(1.1);
-			transform: rotate(-7deg) translateY(20px);
+		0%, 100% {
+			transform: translateY(4px) rotate(-4deg);
 		}
+
 		50% {
-			transform: scale(1);
-			transform: translateY(-20px) rotate(-7.5deg);
-		}
-		100% {
-			transform: rotate(-7deg) translateY(20px);
+			transform: translateY(-14px) rotate(6deg);
 		}
 	}
 </style>

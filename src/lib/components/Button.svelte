@@ -3,7 +3,7 @@
 
 <script lang="ts">
 	type TiltRange = 'left' | 'right' | 'none';
-	type ButtonBackgroundColors = 'blue' | 'pink' | 'gold' | 'lime' | 'light-pink' | 'dark-pink';
+	type ButtonBackgroundColors = 'light-blue' | 'teal';
 
 	export let tilt: TiltRange;
 	export let backgroundColor: ButtonBackgroundColors;
@@ -34,12 +34,12 @@
 	a {
 		font-family: 'Lilita One', sans-serif;
 		color: $brown;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		text-decoration: none;
 		font-weight: 400;
 
 		@include respond-to('small') {
-			font-size: 1rem;
+			font-size: 1.5rem;
 		}
 	}
 
@@ -70,6 +70,12 @@
 	}
 	.bg-dark-pink {
 		background-color: $dark-pink;
+	}
+	.bg-light-blue {
+		background-color: $light-blue;
+	}
+	.bg-teal {
+		background-color: $teal;
 	}
 
 

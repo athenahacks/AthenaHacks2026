@@ -58,7 +58,9 @@
 	<nav>
 		<!-- Left hand side logo -->
 		<button class="home-square" on:click={scrollToTop}>
-			<img src="/images/nav-logo.png" alt="Home" />
+			<div class="circle-logo">
+				<img src="/images/assets/navbar-logo.png" alt="Home" />
+			</div>
 		</button>
 
 		<!-- Navigation anchor links -->
@@ -122,11 +124,12 @@
 			background: transparent;
 			border: none;
 			margin: 1em;
+			margin-left: 2em;
 			position: relative;
 			transition: all 0.4s ease-out;
 
 			@include respond-to('medium') {
-				width: 100px;
+				width: 35%;
 			}
 
 			&:hover {
@@ -134,10 +137,20 @@
 				transform: rotate(-2deg);
 			}
 
-			img {
+			.circle-logo {
+				width: 30%;
+  				aspect-ratio: 1 / 1;
+				border-radius: 50%;
+				border: 3px solid $brown;
+				overflow: hidden;
+			}
+
+			.circle-logo img {
 				pointer-events: none;
-				width: 70%;
-				filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
+				object-fit: cover;
+				width: 100%;
+  				height: 100%;
+				//filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
 			}
 		}
 
@@ -155,7 +168,7 @@
 			right: 0;
 			
 			.navbar {
-				background-color: $lime;
+				background-color: $light-blue;
 				box-sizing: border-box;
 				border: 3px solid $brown;
 				border-radius: 1.5em;
@@ -176,7 +189,7 @@
 						content: '';
 						position: absolute;
 						height: 100%;
-						background-color: $pink;
+						background-color: $yellow;
 						outline: 3px solid $brown;
 						border-radius: 1em;
 						width: var(--activeWidth);

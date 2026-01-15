@@ -64,18 +64,22 @@
 				<li class:active={activeSection == 'about'}>
 					<a href="#about" on:click={toggleActive}>About</a>
 				</li>
+				<!--
 				<li class:active={activeSection == 'schedule'}>
 					<a href="#schedule" on:click={toggleActive}>Schedule</a>
 				</li>
+				-->
 				<li class:active={activeSection == 'faqs'}>
 					<a href="#faqs" on:click={toggleActive}>FAQs</a>
 				</li>
 				<li class:active={activeSection == 'sponsors'}>
 					<a href="#sponsors" on:click={toggleActive}>Sponsors</a>
 				</li>
+				<!--
 				<li class:active={activeSection == 'keynote'}>
 					<a href="#keynote" on:click={toggleActive}>Keynote</a>
 				</li>
+				-->
 				<li class:active={activeSection == 'team'}>
 					<a href="#team" on:click={toggleActive}>Team</a>
 				</li>

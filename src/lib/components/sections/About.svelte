@@ -6,7 +6,7 @@
 	<div class="content">
 		<Header>What is AthenaHacks?</Header>
 		<p>
-			Join us for a spectacular weekend dedicated to <b>closing the gender gap</b>, exploring new
+			Join us on March 28-29 for a spectacular weekend dedicated to <b>closing the gender gap</b>, exploring new
 			technologies, and building the next big thing! Our mission is to support and nurture students
 			of marginalized gender identities in technology by hosting Southern California’s
 			<b> premier women-centric hackathon (trans and non-binary inclusive)</b>. <br /><br />Join us
@@ -37,7 +37,7 @@
 		</p>
 	</div>
 	<div class="image">
-		<img class="owl" src="/images/about.png" alt="watering can owl" />
+		<img class="owl" src="/images/owls/DivingOwl.png" alt="diving owl" />
 	</div>
 </section>
 

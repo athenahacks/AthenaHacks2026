@@ -14,14 +14,14 @@
 		</div>
 		<div class="image">
 			<figure>
-				<img src="/images/shovel_owl.png" alt="Shovel Owl" />
+				<img class="sunglasses-owl" src="/images/owls/SunglassesOwl.png" alt="Sunglasses Owl" />
 				<figcaption>
 					Don’t see your question? Hit us up at <a href="mailto:athenahacks@gmail.com"
 						>athenahacks@gmail.com</a
 					>!
 				</figcaption>
 			</figure>
-			<img class="flower" src="/images/flower.png" alt="pink flower" />
+			<img class="sandcastle" src="/images/assets/sandcastle.png" alt="sandcastle" />
 		</div>
 	</div>
 </section>
@@ -32,13 +32,18 @@
 		gap: 4em;
 		flex-wrap: wrap;
 
+		.sunglasses-owl {
+			max-width: 100%;
+		}
+
 		.questions {
 			flex: 2;
 		}
 
-		.flower {
+		.sandcastle {
 			padding-top: 150px;
 			padding-right: 20px;
+			max-width: 100%
 		}
 
 		.image {
@@ -75,6 +80,10 @@
 		@include respond-to('small') {
 			.image {
 				width: 80%;
+			}
+
+			.sandcastle {
+				padding-top: 100px;
 			}
 		}
 	}

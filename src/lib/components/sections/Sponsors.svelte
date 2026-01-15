@@ -17,7 +17,7 @@
 			/> -->
 		<!----</div> -->
 		<div class="section tier-2">
-			<img class="snail" src="/images/snail-brown.png" alt="snail decoration" />
+			<img class="snail" id="shell3" src="/images/assets/shell3.png" alt="shell decoration" />
 			<img
 				class="sponsor"
 				src="/images/sponsors/bloomberg-engineering.png"
@@ -26,7 +26,7 @@
 			<img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" />
 		</div> 
 		<div class="section tier-3">
-			<img class="snail" src="/images/snail-green.png" alt="snail decoration" />
+			<img class="snail" src="/images/assets/shell2.png" alt="shell decoration" />
 
 			<!-- <img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
 			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> -->
@@ -40,7 +40,7 @@
 				>athenahacks@gmail.com</a
 			>
 		</p>
-		<img src="/images/feather.png" alt="feather" />
+		<img src="/images/assets/turtle.png" alt="turtle" />
 	</div>
 </section>
 
@@ -52,11 +52,6 @@
 		flex-flow: column;
 		gap: 6em;
 		align-items: center;
-
-		@include respond-to('small') {
-			margin: inherit auto;
-			width: 90%;
-		}
 
 		.sponsor {
 			max-width: 100%;
@@ -79,12 +74,18 @@
 			position: relative;
 
 			.snail {
-				width: 170px;
-				height: 100px;
+				max-width: 40%;
+				max-height: 70%;
 				position: absolute;
 				top: -55px;
 				right: -50px;
-				filter: drop-shadow(-0.05em 0.15em 0 $brown);
+				filter: drop-shadow(-0.05em 0.10em 0 $brown);
+			}
+
+			#shell3 {
+				transform: scaleX(-1);
+				top: -80px;
+				right: -60px;
 			}
 		}
 
@@ -98,7 +99,7 @@
 
 		.tier-2 {
 			width: 50%;
-			background-color: $beige;
+			background-color: $sand;
 			.sponsor {
 				max-height: 110px;
 			}
@@ -106,7 +107,7 @@
 
 		.tier-3 {
 			width: 30%;
-			background-color: $lime;
+			background-color: $dark-sand;
 			.sponsor {
 				max-height: 35px;
 			}

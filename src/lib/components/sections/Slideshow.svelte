@@ -2,7 +2,7 @@
 	const slides = [
 		{
 			title: "Dream",
-			image: '/images/owls/CultivateOwl.png',
+			image: '/images/owls/DreamOwl.png',
 			description:
 				"From hardware to mobile, there are so many fields to explore! We want women to explore their ideas and interests, and are looking forward to some amazing projects! Check out last year's projects <a href='https://athenahacks2025.devpost.com/project-gallery' target='_blank'>here</a>!"
 		},
@@ -14,7 +14,7 @@
 		},
 		{
 			title: "Belong",
-			image: '/images/owls/CultivateOwl.png',
+			image: '/images/owls/BelongOwl.png',
 			description:
 				'Right now, only 20% of hackathon participants are women. We hope to fill that gap by providing a comfortable environment that is focused on learning and exploring!'
 		}
@@ -91,7 +91,7 @@
 		inset: 0;
 		backface-visibility: hidden;
 		border-radius: 0.9em;
-		background-color: $red;
+		background-color: $teal;
 		padding: 2rem;
 
 		display: flex;

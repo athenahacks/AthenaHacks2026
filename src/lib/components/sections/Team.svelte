@@ -49,10 +49,6 @@
 	}
 </script>
 
-<!-- accent decorations -->
-<img class="left-branch" src="images/divider1.png" alt="Divider1" />
-<img class="right-branch" src="images/divider3.png" alt="Divider3" />
-
 <section id="team">
 	<Header>Our Team</Header>
 	<div class="team-gallery">
@@ -163,6 +159,7 @@
 
 				&:hover {
 					img {
+						pointer-events: auto;
 						border: 3px solid white;
 					}
 
