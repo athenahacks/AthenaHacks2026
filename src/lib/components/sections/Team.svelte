@@ -85,37 +85,6 @@
 </section>
 
 <style lang="scss">
-	.left-branch {
-		width: 45%;
-		margin-bottom: -240px;
-		margin-top: 30px;
-
-		@include respond-to('medium') {
-			width: 40%;
-		}
-
-		@include respond-to('small') {
-			width: 35%;
-			margin-top: 60px;
-		}
-	}
-
-	.right-branch {
-		width: 50%;
-		margin-left: auto;
-		margin-bottom: -140px;
-
-		@include respond-to('medium') {
-			width: 45%;
-			margin-top: 60px;
-		}
-
-		@include respond-to('small') {
-			width: 40%;
-			margin-top: 60px;
-		}
-	}
-
 	.team-gallery {
 		display: flex;
 		flex-direction: row;
@@ -136,7 +105,8 @@
 			.img-wrapper {
 				display: block;
 				position: relative;
-				transition: all 0.4s ease-out;
+				transition: all 0.4s ease-out; 
+				
 				.link-icon {
 					position: absolute;
 					color: white;

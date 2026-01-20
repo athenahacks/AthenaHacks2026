@@ -148,7 +148,7 @@
 		.logo {
 			border: none;
 			// background-color: $green;
-			background-color: $lime;
+			background-color: $teal;
 			padding: 0.5em 0.75em;
 			font-size: 1.2rem;
 			border-radius: 0.5em;
@@ -183,7 +183,7 @@
 				width 300ms ease-in-out,
 				padding 0ms 300ms linear,
 				outline 0ms 300ms linear;
-			background-color: $green;
+			background-color: $light-blue;
 			padding: 0;
 
 			ul {
@@ -199,7 +199,7 @@
 					padding: 0.25em;
 
 					&.active {
-						background-color: $lime;
+						background-color: $yellow;
 						border: 2px solid $brown;
 						border-radius: 0.5em;
 					}

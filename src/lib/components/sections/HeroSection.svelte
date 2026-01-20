@@ -3,7 +3,7 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<section>
+<section id="home">
 	<div class="background"></div>
 	<div class="surfboard">
 		<img src="/images/assets/surfboard.png" alt="AthenaHacks surfboard" />

@@ -4,7 +4,7 @@
 
 <section id="sponsors">
 	<Header
-		>Our Sponsors
+		>Previous Sponsors
 		<!-- <img class="macaron-stack" src="/images/macaron-stack.png" alt="macaron stack" /> -->
 	</Header>
 	<div class="sponsor-list">
@@ -17,21 +17,27 @@
 			/> -->
 		<!----</div> -->
 		<div class="section tier-2">
-			<img class="snail" id="shell3" src="/images/assets/shell3.png" alt="shell decoration" />
+			<img class="shell" id="shell3" src="/images/assets/shell3.png" alt="shell decoration" />
 			<img
 				class="sponsor"
 				src="/images/sponsors/bloomberg-engineering.png"
 				alt="Bloomberg Engineering"
 			/>
 			<img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" />
+			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
+			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> 
+			<img class="sponsor" src="/images/sponsors/qualcomm.png" alt="qualcomm" />
+			
 		</div> 
+		<!--
 		<div class="section tier-3">
-			<img class="snail" src="/images/assets/shell2.png" alt="shell decoration" />
-
-			<!-- <img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
-			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> -->
+			<img class="shell" src="/images/assets/shell2.png" alt="shell decoration" />
+ 
+			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
+			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> 
 			<img class="sponsor" src="/images/sponsors/qualcomm.png" alt="qualcomm" />
 		</div>
+		-->
 	</div>
 	<div class="thank-you-message">
 		<p>
@@ -73,19 +79,29 @@
 			filter: drop-shadow(0.4em 0.4em 0 $brown);
 			position: relative;
 
-			.snail {
+			.shell {
 				max-width: 40%;
 				max-height: 70%;
 				position: absolute;
-				top: -55px;
-				right: -50px;
+				top: -70px;
+				right: -70px;
 				filter: drop-shadow(-0.05em 0.10em 0 $brown);
 			}
 
 			#shell3 {
 				transform: scaleX(-1);
-				top: -80px;
-				right: -60px;
+				top: -130px;
+				right: -120px;
+
+				@include respond-to('medium') {
+					top: -100px;
+					right: -80px;
+				}
+
+				@include respond-to('small') {
+					top: -75px;
+					right: -70px;
+				}
 			}
 		}
 

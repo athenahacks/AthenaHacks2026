@@ -68,6 +68,9 @@
 			<div class="navbar">
 				<ul bind:this={navList}>
 					<li class:active={activeSection == 'about'} bind:this={aboutListElement}>
+						<a href="#home" on:click={toggleActive}>Home</a>
+					</li>
+					<li class:active={activeSection == 'about'}>
 						<a href="#about" on:click={toggleActive}>About</a>
 					</li>
 					<li class:active={activeSection == 'faqs'}>
@@ -227,7 +230,7 @@
 							content: '';
 							position: absolute;
 							height: 100%;
-							background-color: $pink;
+							background-color: $yellow;
 							outline: 3px solid $brown;
 							border-radius: 1em;
 							width: var(--activeWidth);
