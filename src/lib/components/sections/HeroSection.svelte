@@ -106,13 +106,6 @@
 				padding-top: 130%;
 			}
 
-			.under_construction {
-				top: -15%;
-				img {
-					width: 90%;
-				}
-			}
-			
 			.divider {
 				top: 92%;
 			}
@@ -121,13 +114,6 @@
 		@include respond-to('small') {
 			.background {
 				padding-top: 200%;
-			}
-
-			.under_construction {
-				top: 0%;
-				img {
-					width: 90%;
-				}
 			}
 
 			.content {
