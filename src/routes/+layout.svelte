@@ -13,7 +13,7 @@
 	{#if preloadVisible}
 		<div id="preloader" transition:fade={{ duration: 300 }}>
 			<div class="gif">
-				<img src="/images/preloader.gif" alt="flower blooming" />
+				<img src="" alt="" /> 
 			</div>
 		</div>
 	{/if}
@@ -35,7 +35,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background-color: $blue;
+			background-color: $background-color-light;
 			z-index: 200;
 
 			.gif {

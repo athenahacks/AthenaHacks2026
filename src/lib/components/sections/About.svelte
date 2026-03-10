@@ -6,12 +6,12 @@
 	<div class="content">
 		<Header>What is AthenaHacks?</Header>
 		<p>
-			Join us on March 28-29 for a spectacular weekend dedicated to <b>closing the gender gap</b>, exploring new
-			technologies, and building the next big thing! Our mission is to support and nurture students
-			of marginalized gender identities in technology by hosting Southern California’s
-			<b> premier women-centric hackathon (trans and non-binary inclusive)</b>. <br /><br />Join us
+			Join us on March 28-29 for a spectacular weekend dedicated to <b>closing the gender gap, exploring new
+			technologies, and building the next big thing!</b> Our mission is to create a environment supportive and nurturing
+			of all students, including those of less represented gender identities (e.g., women, trans, and non-binary)
+			in technology by hosting Southern California's premier hackathon. <br /><br />Join us
 			on campus at the University of Southern California (USC) for over 24 hours full of free food,
-			technical workshops, mentorship, social activities, and more! No experience necessary – we
+			technical workshops, mentorship, social activities, and more! No experience necessary; we
 			only require curiosity and creativity!<br /><br />Check us out in the press!
 		</p>
 
