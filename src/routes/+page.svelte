@@ -30,6 +30,7 @@
 <HeroSection />
 <About />
 <Slideshow />
+<Schedule />
 <Faqs />
 <!-- <MemoryLane /> -->
 <Sponsors />
