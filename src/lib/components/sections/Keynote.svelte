@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="description">
-			<h3>Katya Sutil</h3>
+			<h3>Lizzie Siegel</h3>
 			<h4>Sr. Manager of Falcon 9 Subassemblies Production at SpaceX</h4>
 			<p>
 				Katya is the Sr. Manager of Falcon 9 Subassemblies Production at SpaceX, 
