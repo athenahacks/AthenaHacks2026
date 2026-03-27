@@ -4,8 +4,7 @@
 
 <section id="sponsors">
 	<Header
-		>Previous Sponsors
-		<!-- <img class="macaron-stack" src="/images/macaron-stack.png" alt="macaron stack" /> -->
+		>Our Sponsors
 	</Header>
 	<div class="sponsor-list">
 		<!-- <div class="section tier-1">
@@ -23,21 +22,16 @@
 				src="/images/sponsors/bloomberg-engineering.png"
 				alt="Bloomberg Engineering"
 			/>
-			<img class="sponsor" src="/images/sponsors/chevron.png" alt="Chevron" />
-			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
-			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> 
-			<img class="sponsor" src="/images/sponsors/qualcomm.png" alt="qualcomm" />
+			<img class="sponsor" src="/images/sponsors/capitalone.png" alt="Capital One" />
 			
 		</div> 
-		<!--
+
 		<div class="section tier-3">
-			<img class="shell" src="/images/assets/shell2.png" alt="shell decoration" />
+			<img class="shell" src="/images/assets/shell1.png" alt="shell decoration" />
  
-			<img class="sponsor" src="/images/sponsors/google-cloud.png" alt="Google Cloud" />
-			<img class="sponsor" src="/images/sponsors/rewriting-the-code.png" alt="Rewriting The Code" /> 
-			<img class="sponsor" src="/images/sponsors/qualcomm.png" alt="qualcomm" />
+			<img class="sponsor" src="/images/sponsors/tavily.png" alt="Tavily" /> 
+			<img class="sponsor" src="/images/sponsors/claudebuilderclub.png" alt="Claude Builder Club" />
 		</div>
-		-->
 	</div>
 	<div class="thank-you-message">
 		<p>
@@ -90,17 +84,23 @@
 
 			#shell3 {
 				transform: scaleX(-1);
-				top: -130px;
-				right: -120px;
+				max-width: 60%;
+				max-height: 80%;
+				top: -100px;
+				right: -80px;
 
 				@include respond-to('medium') {
-					top: -100px;
-					right: -80px;
+					top: -150px;
+					right: -100px;
+					max-width: 40%;
+					max-height: 60%;
 				}
 
 				@include respond-to('small') {
 					top: -75px;
 					right: -70px;
+					max-width: 50%;   
+        			max-height: 50%;
 				}
 			}
 		}
@@ -114,7 +114,7 @@
 		// }
 
 		.tier-2 {
-			width: 50%;
+			width: 70%;
 			background-color: $sand;
 			.sponsor {
 				max-height: 110px;
@@ -122,10 +122,10 @@
 		}
 
 		.tier-3 {
-			width: 30%;
+			width: 50%;
 			background-color: $dark-sand;
 			.sponsor {
-				max-height: 35px;
+				max-height: 50px;
 			}
 		}
 	}
